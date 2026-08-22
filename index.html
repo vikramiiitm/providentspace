@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
   <head>
     <style>
       .yNHHyP-marker-view .IPAZAH-content-container > * {
@@ -6072,8 +6073,27 @@
         },
       };
     </script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
 
     <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+
+      html.lenis, html.lenis body {
+        height: auto;
+      }
+      .lenis.lenis-smooth {
+        scroll-behavior: auto !important;
+      }
+      .lenis.lenis-smooth [data-lenis-prevent] {
+        overscroll-behavior: contain;
+      }
+      .lenis.lenis-stopped {
+        overflow: hidden;
+      }
+
       :root {
         --gold: #d4af37;
       }
@@ -8880,8 +8900,36 @@
         }
       });
 
-      // Apple-Level Scroll Reveal Intersection Observer
+      // Apple-Level Scroll Reveal Intersection Observer & Lenis Smooth Scroll
       document.addEventListener("DOMContentLoaded", () => {
+        if (typeof Lenis !== "undefined") {
+          const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true,
+            touchMultiplier: 1.5,
+          });
+
+          function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+          }
+          requestAnimationFrame(raf);
+
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function (e) {
+              const targetId = this.getAttribute('href');
+              if (targetId && targetId !== '#') {
+                const targetEl = document.querySelector(targetId);
+                if (targetEl) {
+                  e.preventDefault();
+                  lenis.scrollTo(targetEl, { offset: -90, duration: 1.2 });
+                }
+              }
+            });
+          });
+        }
+
         const targets = document.querySelectorAll("section > div, .grid > div, footer > div");
         targets.forEach((el, index) => {
           el.classList.add("reveal-on-scroll");
