@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <style>
@@ -6081,7 +6081,8 @@
         scroll-padding-top: 100px;
       }
 
-      html.lenis, html.lenis body {
+      html.lenis,
+      html.lenis body {
         height: auto;
       }
       .lenis.lenis-smooth {
@@ -6190,7 +6191,9 @@
       .reveal-on-scroll {
         opacity: 0;
         transform: translateY(32px) scale(0.985);
-        transition: opacity 0.85s var(--apple-ease), transform 0.85s var(--apple-ease);
+        transition:
+          opacity 0.85s var(--apple-ease),
+          transform 0.85s var(--apple-ease);
         will-change: opacity, transform;
       }
       .reveal-on-scroll.is-revealed {
@@ -6200,11 +6203,16 @@
 
       /* Apple Card Hover Lift & Glow */
       .apple-card {
-        transition: transform 0.6s var(--apple-ease), box-shadow 0.6s var(--apple-ease), border-color 0.6s var(--apple-ease);
+        transition:
+          transform 0.6s var(--apple-ease),
+          box-shadow 0.6s var(--apple-ease),
+          border-color 0.6s var(--apple-ease);
       }
       .apple-card:hover {
         transform: translateY(-6px) scale(1.008);
-        box-shadow: 0 30px 60px -15px rgba(212, 175, 55, 0.18), 0 0 25px rgba(212, 175, 55, 0.08);
+        box-shadow:
+          0 30px 60px -15px rgba(212, 175, 55, 0.18),
+          0 0 25px rgba(212, 175, 55, 0.08);
       }
 
       /* Apple Ultra-Glass Modal Card */
@@ -6213,7 +6221,9 @@
         backdrop-filter: blur(35px) saturate(200%);
         -webkit-backdrop-filter: blur(35px) saturate(200%);
         border: 1px solid rgba(212, 175, 55, 0.25);
-        box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.9), 0 0 40px rgba(212, 175, 55, 0.1);
+        box-shadow:
+          0 40px 80px -20px rgba(0, 0, 0, 0.9),
+          0 0 40px rgba(212, 175, 55, 0.1);
       }
 
       /* Modal Spring Pop Entrance Animation */
@@ -6237,7 +6247,7 @@
         overflow: hidden;
       }
       .gold-shimmer-btn::after {
-        content: '';
+        content: "";
         position: absolute;
         top: -50%;
         left: -60%;
@@ -7647,9 +7657,16 @@
               class="h-12 w-auto object-contain"
             />
           </div>
-          <div class="hidden md:flex items-center bg-white/5 border border-white/10 px-4 py-1.5 rounded-full">
-            <span class="material-symbols-outlined text-brand-gold text-sm mr-2">verified</span>
-            <span class="text-[9px] uppercase tracking-[0.15em] font-semibold text-white/60">RERA: RC/HARERA/GGM/4634/4229/2026/669</span>
+          <div
+            class="hidden md:flex items-center bg-white/5 border border-white/10 px-4 py-1.5 rounded-full"
+          >
+            <span class="material-symbols-outlined text-brand-gold text-sm mr-2"
+              >verified</span
+            >
+            <span
+              class="text-[9px] uppercase tracking-[0.15em] font-semibold text-white/60"
+              >RERA: RC/HARERA/GGM/4634/4229/2026/669</span
+            >
           </div>
         </div>
 
@@ -7660,7 +7677,9 @@
             <a href="#projects" class="hover:text-brand-gold transition-colors"
               >Projects</a
             >
-            <a href="#testimonials" class="hover:text-brand-gold transition-colors"
+            <a
+              href="#testimonials"
+              class="hover:text-brand-gold transition-colors"
               >Testimonials</a
             >
             <a href="#about" class="hover:text-brand-gold transition-colors"
@@ -7741,9 +7760,9 @@
               Upcoming <span class="italic text-brand-gold">Projects</span>
             </h2>
             <p class="text-white/40 text-sm tracking-wide">
-              Explore a curated selection of Gurgaon's most promising new residential
-              developments, handpicked for their exceptional design, prime locations
-              and long-term value.
+              Explore a curated selection of Gurgaon's most promising new
+              residential developments, handpicked for their exceptional design,
+              prime locations and long-term value.
             </p>
           </div>
           <div class="flex space-x-4">
@@ -7770,137 +7789,323 @@
           id="projects-carousel"
         >
           <!-- Project 1 -->
-          <div class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark">
+          <div
+            class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark"
+          >
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
-              <img src="signature_global.png" alt="Signature Global" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+              <img
+                src="signature_global.png"
+                alt="Signature Global"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"
+              ></div>
             </div>
             <div class="p-8">
-              <h3 class="text-xl font-serif font-bold mb-1">Signature Global</h3>
-              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Tonino Lamborghini</p>
+              <h3 class="text-xl font-serif font-bold mb-1">
+                Signature Global
+              </h3>
+              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
+                Tonino Lamborghini
+              </p>
               <div class="flex gap-3">
-                <button onclick="openContact('Signature Global')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
-                <a href="https://drive.google.com/file/d/1u_MhWG8kHc_2AqSRglp5CzpkgHl0QHM6/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
+                <button
+                  onclick="openContact('Signature Global')"
+                  class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
+                >
+                  Enquire
+                </button>
+                <a
+                  href="https://drive.google.com/file/d/1u_MhWG8kHc_2AqSRglp5CzpkgHl0QHM6/view?usp=sharing"
+                  target="_blank"
+                  class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center"
+                  >Download</a
+                >
               </div>
             </div>
           </div>
           <!-- Project 2 -->
-          <div class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark">
+          <div
+            class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark"
+          >
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
-              <img src="dlf_privana.png" alt="Suncity Monarch" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+              <img
+                src="dlf_privana.png"
+                alt="Suncity Monarch"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"
+              ></div>
             </div>
             <div class="p-8">
               <h3 class="text-xl font-serif font-bold mb-1">Suncity Monarch</h3>
-              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Residents</p>
+              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
+                Residents
+              </p>
               <div class="flex gap-3">
-                <button onclick="openContact('Suncity Monarch')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
-                <a href="https://drive.google.com/file/d/1RejwlVKVS0SxfTSMArATThWHqV0tlwvc/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
+                <button
+                  onclick="openContact('Suncity Monarch')"
+                  class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
+                >
+                  Enquire
+                </button>
+                <a
+                  href="https://drive.google.com/file/d/1RejwlVKVS0SxfTSMArATThWHqV0tlwvc/view?usp=sharing"
+                  target="_blank"
+                  class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center"
+                  >Download</a
+                >
               </div>
             </div>
           </div>
           <!-- Project 3 -->
-          <div class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark">
+          <div
+            class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark"
+          >
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
-              <img src="m3m_st_andrews.png" alt="M3M St. Andrews" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+              <img
+                src="m3m_st_andrews.png"
+                alt="M3M St. Andrews"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"
+              ></div>
             </div>
             <div class="p-8">
               <h3 class="text-xl font-serif font-bold mb-1">M3M St. Andrews</h3>
-              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Smart City Delhi Airport</p>
+              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
+                Smart City Delhi Airport
+              </p>
               <div class="flex gap-3">
-                <button onclick="openContact('M3M St. Andrews')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
-                <a href="https://drive.google.com/file/d/15lUc9g--a9BspXDXzfKhl_jw1dh4dJwi/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
+                <button
+                  onclick="openContact('M3M St. Andrews')"
+                  class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
+                >
+                  Enquire
+                </button>
+                <a
+                  href="https://drive.google.com/file/d/15lUc9g--a9BspXDXzfKhl_jw1dh4dJwi/view?usp=sharing"
+                  target="_blank"
+                  class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center"
+                  >Download</a
+                >
               </div>
             </div>
           </div>
           <!-- Project 4 -->
-          <div class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark">
+          <div
+            class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark"
+          >
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
-              <img src="m3m_mansion.png" alt="M3M Mansion" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+              <img
+                src="m3m_mansion.png"
+                alt="M3M Mansion"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"
+              ></div>
             </div>
             <div class="p-8">
               <h3 class="text-xl font-serif font-bold mb-1">M3M Mansion</h3>
-              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">SCDA Smart City Delhi Airport</p>
+              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
+                SCDA Smart City Delhi Airport
+              </p>
               <div class="flex gap-3">
-                <button onclick="openContact('M3M Mansion')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
-                <a href="https://drive.google.com/file/d/1tdhYKgZOE6wCM0LEzmXneY6qVCNFfTJL/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
+                <button
+                  onclick="openContact('M3M Mansion')"
+                  class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
+                >
+                  Enquire
+                </button>
+                <a
+                  href="https://drive.google.com/file/d/1tdhYKgZOE6wCM0LEzmXneY6qVCNFfTJL/view?usp=sharing"
+                  target="_blank"
+                  class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center"
+                  >Download</a
+                >
               </div>
             </div>
           </div>
           <!-- Project 5 -->
-          <div class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark">
+          <div
+            class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark"
+          >
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
-              <img src="three_sixty_north.png" alt="Three Sixty North" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+              <img
+                src="three_sixty_north.png"
+                alt="Three Sixty North"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"
+              ></div>
             </div>
             <div class="p-8">
-              <h3 class="text-xl font-serif font-bold mb-1">Three Sixty North</h3>
-              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">By Oberoi Group</p>
+              <h3 class="text-xl font-serif font-bold mb-1">
+                Three Sixty North
+              </h3>
+              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
+                By Oberoi Group
+              </p>
               <div class="flex gap-3">
-                <button onclick="openContact('Three Sixty North')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
-                <a href="https://drive.google.com/file/d/11rkpGxn9LORF1CgpYl_F1iyFgqb3FE5t/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
+                <button
+                  onclick="openContact('Three Sixty North')"
+                  class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
+                >
+                  Enquire
+                </button>
+                <a
+                  href="https://drive.google.com/file/d/11rkpGxn9LORF1CgpYl_F1iyFgqb3FE5t/view?usp=sharing"
+                  target="_blank"
+                  class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center"
+                  >Download</a
+                >
               </div>
             </div>
           </div>
           <!-- Project 6 -->
-          <div class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark">
+          <div
+            class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark"
+          >
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
-              <img src="elan_presidential.png" alt="ELAN, The Presidential" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+              <img
+                src="elan_presidential.png"
+                alt="ELAN, The Presidential"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"
+              ></div>
             </div>
             <div class="p-8">
-              <h3 class="text-xl font-serif font-bold mb-1">ELAN, The Presidential</h3>
-              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Gurugram</p>
+              <h3 class="text-xl font-serif font-bold mb-1">
+                ELAN, The Presidential
+              </h3>
+              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
+                Gurugram
+              </p>
               <div class="flex gap-3">
-                <button onclick="openContact('ELAN, The Presidential')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
-                <a href="https://drive.google.com/file/d/1fZZu4AGE_fiTcNbtHmjX_xTPYSwCHdKM/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
+                <button
+                  onclick="openContact('ELAN, The Presidential')"
+                  class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
+                >
+                  Enquire
+                </button>
+                <a
+                  href="https://drive.google.com/file/d/1fZZu4AGE_fiTcNbtHmjX_xTPYSwCHdKM/view?usp=sharing"
+                  target="_blank"
+                  class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center"
+                  >Download</a
+                >
               </div>
             </div>
           </div>
           <!-- Project 7 -->
-          <div class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark">
+          <div
+            class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark"
+          >
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
-              <img src="the_empire.png" alt="The Empire" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+              <img
+                src="the_empire.png"
+                alt="The Empire"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"
+              ></div>
             </div>
             <div class="p-8">
               <h3 class="text-xl font-serif font-bold mb-1">The Empire</h3>
-              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Golf Course Road</p>
+              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
+                Golf Course Road
+              </p>
               <div class="flex gap-3">
-                <button onclick="openContact('The Empire')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
-                <a href="https://drive.google.com/file/d/1f8tEGJndB6sVs5KXBBzynwCzVSQfJMsL/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
+                <button
+                  onclick="openContact('The Empire')"
+                  class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
+                >
+                  Enquire
+                </button>
+                <a
+                  href="https://drive.google.com/file/d/1f8tEGJndB6sVs5KXBBzynwCzVSQfJMsL/view?usp=sharing"
+                  target="_blank"
+                  class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center"
+                  >Download</a
+                >
               </div>
             </div>
           </div>
           <!-- Project 8 -->
-          <div class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark">
+          <div
+            class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark"
+          >
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
-              <img src="tarc_ishva.png" alt="TARC Ishva" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+              <img
+                src="tarc_ishva.png"
+                alt="TARC Ishva"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"
+              ></div>
             </div>
             <div class="p-8">
               <h3 class="text-xl font-serif font-bold mb-1">TARC Ishva</h3>
-              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Gurugram</p>
+              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
+                Gurugram
+              </p>
               <div class="flex gap-3">
-                <button onclick="openContact('TARC Ishva')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
-                <a href="https://drive.google.com/file/d/1VTJDIKp54m2sqgcMGYkbKNLe71JNcusY/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
+                <button
+                  onclick="openContact('TARC Ishva')"
+                  class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
+                >
+                  Enquire
+                </button>
+                <a
+                  href="https://drive.google.com/file/d/1VTJDIKp54m2sqgcMGYkbKNLe71JNcusY/view?usp=sharing"
+                  target="_blank"
+                  class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center"
+                  >Download</a
+                >
               </div>
             </div>
           </div>
           <!-- Project 9 -->
-          <div class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark">
+          <div
+            class="flex-none w-[85vw] sm:w-[350px] md:w-[380px] snap-start group relative overflow-hidden rounded-2xl border border-white/5 hover:border-brand-gold/30 transition-all bg-gradient-to-br from-brand-slate to-brand-dark"
+          >
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
-              <img src="the_corridors.png" alt="The Corridors" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
+              <img
+                src="the_corridors.png"
+                alt="The Corridors"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"
+              ></div>
             </div>
             <div class="p-8">
               <h3 class="text-xl font-serif font-bold mb-1">The Corridors</h3>
-              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">By Ireo</p>
+              <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
+                By Ireo
+              </p>
               <div class="flex gap-3">
-                <button onclick="openContact('The Corridors')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
-                <a href="https://drive.google.com/file/d/1_VCa9XfT9m4qcy1fmITqvFjrLcXqye6L/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
+                <button
+                  onclick="openContact('The Corridors')"
+                  class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
+                >
+                  Enquire
+                </button>
+                <a
+                  href="https://drive.google.com/file/d/1_VCa9XfT9m4qcy1fmITqvFjrLcXqye6L/view?usp=sharing"
+                  target="_blank"
+                  class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center"
+                  >Download</a
+                >
               </div>
             </div>
           </div>
@@ -8247,9 +8452,10 @@
             </h2>
             <p class="text-white/40 mt-10 text-sm leading-loose">
               From finding the right property to navigating the finer details of
-              the transaction, our clients value the transparency, responsiveness
-              and personal attention we bring to every engagement. Here's what
-              they have to say about working with Provident Space.
+              the transaction, our clients value the transparency,
+              responsiveness and personal attention we bring to every
+              engagement. Here's what they have to say about working with
+              Provident Space.
             </p>
           </div>
 
@@ -8395,17 +8601,29 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <!-- Photo Side -->
           <div class="relative flex justify-center lg:justify-start">
-            <div class="relative w-80 h-96 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+            <div
+              class="relative w-80 h-96 rounded-3xl overflow-hidden border border-white/10 shadow-2xl"
+            >
               <img
                 src="resources/ProjectsDocsdrivedownloaded/Photo - Bibhor Poddar.png"
                 alt="Bibhor Poddar - Founder, Provident Space"
                 class="w-full h-full object-cover object-top"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/60 via-transparent to-transparent"></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-brand-dark/60 via-transparent to-transparent"
+              ></div>
             </div>
-            <div class="absolute -bottom-4 left-1/2 lg:left-40 -translate-x-1/2 lg:translate-x-0 bg-brand-slate border border-brand-gold/20 px-8 py-4 rounded-2xl backdrop-blur-md shadow-xl">
-              <p class="text-brand-gold text-xs font-bold uppercase tracking-widest">Founder</p>
-              <p class="text-white text-lg font-serif font-bold">Bibhor Poddar</p>
+            <div
+              class="absolute -bottom-4 left-1/2 lg:left-40 -translate-x-1/2 lg:translate-x-0 bg-brand-slate border border-brand-gold/20 px-8 py-4 rounded-2xl backdrop-blur-md shadow-xl"
+            >
+              <p
+                class="text-brand-gold text-xs font-bold uppercase tracking-widest"
+              >
+                Founder
+              </p>
+              <p class="text-white text-lg font-serif font-bold">
+                Bibhor Poddar
+              </p>
             </div>
           </div>
 
@@ -8413,34 +8631,41 @@
           <div>
             <div class="flex items-center space-x-4 mb-8">
               <div class="logo-stripe w-12"></div>
-              <span class="text-brand-gold text-xs uppercase tracking-[0.5em] font-bold">Our Story</span>
+              <span
+                class="text-brand-gold text-xs uppercase tracking-[0.5em] font-bold"
+                >Our Story</span
+              >
             </div>
             <h2 class="text-4xl md:text-5xl font-serif font-bold mb-10">
               About <span class="italic text-brand-gold">Us</span>
             </h2>
 
-            <div class="space-y-6 text-white/60 text-sm leading-relaxed font-light">
+            <div
+              class="space-y-6 text-white/60 text-sm leading-relaxed font-light"
+            >
               <p>
-                Buying real estate can be exciting, but it can also be overwhelming.
-                Too many properties, too many promises, changing prices, confusing
-                paperwork, and one question that keeps coming back, "Am I making the
-                right decision?" That's where we come in.
+                Buying real estate can be exciting, but it can also be
+                overwhelming. Too many properties, too many promises, changing
+                prices, confusing paperwork, and one question that keeps coming
+                back, "Am I making the right decision?" That's where we come in.
               </p>
               <p>
                 At Provident Space, we believe our job isn't to show you more
                 properties; it's to help you find the right one.
               </p>
               <p>
-                With 10 years of experience in real estate, we've learned that every
-                buyer has a different definition of the right property. So instead of
-                pushing you towards what's available, we take the time to understand
-                what you actually need, then use our market knowledge and expertise to
-                bring clarity to the decision.
+                With 10 years of experience in real estate, we've learned that
+                every buyer has a different definition of the right property. So
+                instead of pushing you towards what's available, we take the
+                time to understand what you actually need, then use our market
+                knowledge and expertise to bring clarity to the decision.
               </p>
-              <p class="text-white/80 font-normal italic border-l-2 border-brand-gold/40 pl-6">
-                Because you shouldn't have to become a real estate expert to make a
-                smart real estate decision. You just need the right person beside you.
-                That's what Provident Space aims to be.
+              <p
+                class="text-white/80 font-normal italic border-l-2 border-brand-gold/40 pl-6"
+              >
+                Because you shouldn't have to become a real estate expert to
+                make a smart real estate decision. You just need the right
+                person beside you. That's what Provident Space aims to be.
               </p>
             </div>
 
@@ -8450,9 +8675,13 @@
                 target="_blank"
                 class="inline-flex items-center gap-3 bg-brand-slate border border-brand-gold/20 px-8 py-4 rounded-xl text-white text-xs font-bold uppercase tracking-widest hover:border-brand-gold/60 hover:bg-brand-gold/5 transition-all"
               >
-                <span class="material-symbols-outlined text-brand-gold text-lg">verified</span>
+                <span class="material-symbols-outlined text-brand-gold text-lg"
+                  >verified</span
+                >
                 RERA Certificate
-                <span class="material-symbols-outlined text-white/40 text-sm">open_in_new</span>
+                <span class="material-symbols-outlined text-white/40 text-sm"
+                  >open_in_new</span
+                >
               </a>
               <button
                 onclick="openContact()"
@@ -8512,49 +8741,121 @@
             </p>
             <div class="space-y-3 text-white/60 text-sm">
               <div class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-brand-gold text-base mt-0.5">location_on</span>
-                <span>B-652 B Block Sushant lok-1,<br/>Near Headquarter 27, Gurgaon, Haryana</span>
+                <span
+                  class="material-symbols-outlined text-brand-gold text-base mt-0.5"
+                  >location_on</span
+                >
+                <span
+                  >B-652 B Block Sushant lok-1,<br />Near Headquarter 27,
+                  Gurgaon, Haryana</span
+                >
               </div>
               <div class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-brand-gold text-base">mail</span>
-                <a href="mailto:spaceprovident@gmail.com" class="hover:text-brand-gold transition-colors">spaceprovident@gmail.com</a>
+                <span
+                  class="material-symbols-outlined text-brand-gold text-base"
+                  >mail</span
+                >
+                <a
+                  href="mailto:spaceprovident@gmail.com"
+                  class="hover:text-brand-gold transition-colors"
+                  >spaceprovident@gmail.com</a
+                >
               </div>
             </div>
           </div>
 
           <!-- Column 2: Quick Links -->
           <div class="md:pl-12">
-            <h4 class="text-brand-gold text-sm uppercase tracking-widest font-bold mb-8">Quick Links</h4>
+            <h4
+              class="text-brand-gold text-sm uppercase tracking-widest font-bold mb-8"
+            >
+              Quick Links
+            </h4>
             <ul class="space-y-4 text-white/60 text-sm">
-              <li><a href="terms.html" class="hover:text-brand-gold transition-colors">Terms & Conditions</a></li>
-              <li><a href="privacy.html" class="hover:text-brand-gold transition-colors">Privacy Policy</a></li>
-              <li><a href="#projects" class="hover:text-brand-gold transition-colors">Projects</a></li>
-              <li><a href="#about" class="hover:text-brand-gold transition-colors">About Us</a></li>
+              <li>
+                <a
+                  href="terms.html"
+                  class="hover:text-brand-gold transition-colors"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="privacy.html"
+                  class="hover:text-brand-gold transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="hover:text-brand-gold transition-colors"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-brand-gold transition-colors"
+                  >About Us</a
+                >
+              </li>
             </ul>
           </div>
 
           <!-- Column 3: Social + Contact -->
           <div class="md:text-right">
-            <h4 class="text-brand-gold text-sm uppercase tracking-widest font-bold mb-8">Connect With Us</h4>
+            <h4
+              class="text-brand-gold text-sm uppercase tracking-widest font-bold mb-8"
+            >
+              Connect With Us
+            </h4>
             <div class="flex gap-4 mb-8 md:justify-end">
-              <a href="https://www.facebook.com/profile.php?id=61586245756379" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-brand-dark transition-all text-white/60">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+              <a
+                href="https://www.facebook.com/profile.php?id=61586245756379"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-brand-dark transition-all text-white/60"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  />
+                </svg>
               </a>
-              <a href="https://www.instagram.com/providentspace" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-brand-dark transition-all text-white/60">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+              <a
+                href="https://www.instagram.com/providentspace"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-brand-dark transition-all text-white/60"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  />
+                </svg>
               </a>
             </div>
             <p class="text-white/40 text-xs">+91 8638496774</p>
           </div>
         </div>
 
-        <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div
+          class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
           <p class="text-white/20 text-[10px] uppercase tracking-widest">
             Copyright 2026 | Provident Space | All Rights Reserved
           </p>
-          <p class="text-white/40 text-xs uppercase tracking-widest font-medium">
+          <p
+            class="text-white/40 text-xs uppercase tracking-widest font-medium"
+          >
             Developed by
-            <a href="https://noblessetech.com" target="_blank" class="text-brand-gold hover:text-white transition-colors font-bold">NoblesseTech</a>
+            <a
+              href="https://noblessetech.com"
+              target="_blank"
+              class="text-brand-gold hover:text-white transition-colors font-bold"
+              >NoblesseTech</a
+            >
           </p>
         </div>
       </div>
@@ -8605,24 +8906,102 @@
             id="inquiry-project"
             class="w-full bg-brand-dark border border-white/10 px-6 py-4 rounded-2xl focus:outline-none text-white font-light text-sm appearance-none cursor-pointer text-white/90 apple-input"
           >
-            <option value="" class="bg-brand-dark text-white">Preferred Investment Option / Project</option>
-            <optgroup label="Upcoming Projects" class="bg-brand-dark text-brand-gold font-bold">
-              <option value="M3M Mansion" class="bg-brand-dark text-white font-normal">M3M Mansion (Smart City Delhi Airport)</option>
-              <option value="M3M St. Andrews" class="bg-brand-dark text-white font-normal">M3M St. Andrews (Smart City Delhi Airport)</option>
-              <option value="Three Sixty North" class="bg-brand-dark text-white font-normal">Three Sixty North (By Oberoi Group)</option>
-              <option value="ELAN, The Presidential" class="bg-brand-dark text-white font-normal">ELAN, The Presidential (Gurugram)</option>
-              <option value="Signature Global" class="bg-brand-dark text-white font-normal">Signature Global (Tonino Lamborghini)</option>
-              <option value="The Empire" class="bg-brand-dark text-white font-normal">The Empire (Golf Course Road)</option>
-              <option value="TARC Ishva" class="bg-brand-dark text-white font-normal">TARC Ishva (Gurugram)</option>
-              <option value="Suncity Monarch" class="bg-brand-dark text-white font-normal">Suncity Monarch (Residents)</option>
-              <option value="The Corridors" class="bg-brand-dark text-white font-normal">The Corridors (By Ireo)</option>
+            <option value="" class="bg-brand-dark text-white">
+              Preferred Investment Option / Project
+            </option>
+            <optgroup
+              label="Upcoming Projects"
+              class="bg-brand-dark text-brand-gold font-bold"
+            >
+              <option
+                value="M3M Mansion"
+                class="bg-brand-dark text-white font-normal"
+              >
+                M3M Mansion (Smart City Delhi Airport)
+              </option>
+              <option
+                value="M3M St. Andrews"
+                class="bg-brand-dark text-white font-normal"
+              >
+                M3M St. Andrews (Smart City Delhi Airport)
+              </option>
+              <option
+                value="Three Sixty North"
+                class="bg-brand-dark text-white font-normal"
+              >
+                Three Sixty North (By Oberoi Group)
+              </option>
+              <option
+                value="ELAN, The Presidential"
+                class="bg-brand-dark text-white font-normal"
+              >
+                ELAN, The Presidential (Gurugram)
+              </option>
+              <option
+                value="Signature Global"
+                class="bg-brand-dark text-white font-normal"
+              >
+                Signature Global (Tonino Lamborghini)
+              </option>
+              <option
+                value="The Empire"
+                class="bg-brand-dark text-white font-normal"
+              >
+                The Empire (Golf Course Road)
+              </option>
+              <option
+                value="TARC Ishva"
+                class="bg-brand-dark text-white font-normal"
+              >
+                TARC Ishva (Gurugram)
+              </option>
+              <option
+                value="Suncity Monarch"
+                class="bg-brand-dark text-white font-normal"
+              >
+                Suncity Monarch (Residents)
+              </option>
+              <option
+                value="The Corridors"
+                class="bg-brand-dark text-white font-normal"
+              >
+                The Corridors (By Ireo)
+              </option>
             </optgroup>
-            <optgroup label="Investment Corridors" class="bg-brand-dark text-brand-gold font-bold">
-              <option value="Golf Course Road" class="bg-brand-dark text-white font-normal">Golf Course Road Corridor</option>
-              <option value="Golf Course Extension" class="bg-brand-dark text-white font-normal">Golf Course Extension Corridor</option>
-              <option value="New Gurgaon" class="bg-brand-dark text-white font-normal">New Gurgaon Corridor</option>
-              <option value="Dwarka Expressway" class="bg-brand-dark text-white font-normal">Dwarka Expressway Corridor</option>
-              <option value="Southern Peripheral Road" class="bg-brand-dark text-white font-normal">Southern Peripheral Road (SPR)</option>
+            <optgroup
+              label="Investment Corridors"
+              class="bg-brand-dark text-brand-gold font-bold"
+            >
+              <option
+                value="Golf Course Road"
+                class="bg-brand-dark text-white font-normal"
+              >
+                Golf Course Road Corridor
+              </option>
+              <option
+                value="Golf Course Extension"
+                class="bg-brand-dark text-white font-normal"
+              >
+                Golf Course Extension Corridor
+              </option>
+              <option
+                value="New Gurgaon"
+                class="bg-brand-dark text-white font-normal"
+              >
+                New Gurgaon Corridor
+              </option>
+              <option
+                value="Dwarka Expressway"
+                class="bg-brand-dark text-white font-normal"
+              >
+                Dwarka Expressway Corridor
+              </option>
+              <option
+                value="Southern Peripheral Road"
+                class="bg-brand-dark text-white font-normal"
+              >
+                Southern Peripheral Road (SPR)
+              </option>
             </optgroup>
           </select>
 
@@ -8630,12 +9009,27 @@
             id="inquiry-budget"
             class="w-full bg-brand-dark border border-white/10 px-6 py-4 rounded-2xl focus:outline-none text-white font-light text-sm appearance-none cursor-pointer text-white/90 apple-input"
           >
-            <option value="" class="bg-brand-dark text-white">Target Budget Range</option>
-            <option value="Under ₹2 Cr" class="bg-brand-dark text-white">Under ₹2 Cr</option>
-            <option value="₹2 Cr - ₹5 Cr" class="bg-brand-dark text-white">₹2 Cr - ₹5 Cr</option>
-            <option value="₹5 Cr - ₹10 Cr" class="bg-brand-dark text-white">₹5 Cr - ₹10 Cr</option>
-            <option value="₹10 Cr - ₹20 Cr" class="bg-brand-dark text-white">₹10 Cr - ₹20 Cr</option>
-            <option value="₹20 Cr+ / Ultra Luxury" class="bg-brand-dark text-white">₹20 Cr+ / Ultra Luxury</option>
+            <option value="" class="bg-brand-dark text-white">
+              Target Budget Range
+            </option>
+            <option value="Under ₹2 Cr" class="bg-brand-dark text-white">
+              Under ₹2 Cr
+            </option>
+            <option value="₹2 Cr - ₹5 Cr" class="bg-brand-dark text-white">
+              ₹2 Cr - ₹5 Cr
+            </option>
+            <option value="₹5 Cr - ₹10 Cr" class="bg-brand-dark text-white">
+              ₹5 Cr - ₹10 Cr
+            </option>
+            <option value="₹10 Cr - ₹20 Cr" class="bg-brand-dark text-white">
+              ₹10 Cr - ₹20 Cr
+            </option>
+            <option
+              value="₹20 Cr+ / Ultra Luxury"
+              class="bg-brand-dark text-white"
+            >
+              ₹20 Cr+ / Ultra Luxury
+            </option>
           </select>
 
           <textarea
@@ -8668,15 +9062,24 @@
       <div
         class="relative w-full max-w-4xl apple-glass-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl my-10 animate-modal-pop"
       >
-        <div class="flex items-center justify-between border-b border-white/10 pb-6 mb-6">
+        <div
+          class="flex items-center justify-between border-b border-white/10 pb-6 mb-6"
+        >
           <div>
             <h3 class="text-2xl md:text-3xl font-serif">
               Terms & <span class="text-brand-gold">Conditions</span>
             </h3>
-            <p class="text-white/40 text-xs mt-1">Last Updated: 12 August 2026 | HRERA Reg: RC/HARERA/GGM/4634/4229/2026/669</p>
+            <p class="text-white/40 text-xs mt-1">
+              Last Updated: 12 August 2026 | HRERA Reg:
+              RC/HARERA/GGM/4634/4229/2026/669
+            </p>
           </div>
           <div class="flex items-center gap-3">
-            <a href="terms.html" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 text-xs text-brand-gold border border-brand-gold/30 px-3 py-1.5 rounded-full hover:bg-brand-gold hover:text-brand-dark transition-all">
+            <a
+              href="terms.html"
+              target="_blank"
+              class="hidden sm:inline-flex items-center gap-1.5 text-xs text-brand-gold border border-brand-gold/30 px-3 py-1.5 rounded-full hover:bg-brand-gold hover:text-brand-dark transition-all"
+            >
               <span class="material-symbols-outlined text-sm">open_in_new</span>
               Full Page
             </a>
@@ -8689,58 +9092,166 @@
           </div>
         </div>
 
-        <div class="prose prose-invert max-w-none text-white/70 text-sm leading-relaxed space-y-6 max-h-[65vh] overflow-y-auto pr-4 scroll-hide">
-          <p>Welcome to <strong>PROVIDENT SPACE</strong> ("we", "us", "our", or "the Company"). These Terms & Conditions ("Terms") govern your access to and use of <a href="https://www.providentspace.com/" class="text-brand-gold underline">https://www.providentspace.com/</a>, including all property listings, information, content, enquiry forms, services and features.</p>
+        <div
+          class="prose prose-invert max-w-none text-white/70 text-sm leading-relaxed space-y-6 max-h-[65vh] overflow-y-auto pr-4 scroll-hide"
+        >
+          <p>
+            Welcome to <strong>PROVIDENT SPACE</strong> ("we", "us", "our", or
+            "the Company"). These Terms & Conditions ("Terms") govern your
+            access to and use of
+            <a
+              href="https://www.providentspace.com/"
+              class="text-brand-gold underline"
+              >https://www.providentspace.com/</a
+            >, including all property listings, information, content, enquiry
+            forms, services and features.
+          </p>
 
           <h4 class="text-brand-gold text-base font-bold mt-6">1. About Us</h4>
-          <p>BIBHOR PODDAR (PROVIDENT SPACE) is a real-estate consultancy/brokerage business operating from Gurugram, Haryana, India.<br/>
-          Business Address: B-652 B Block Sushant lok-1, Near Headquarter 27, Gurgaon, Haryana<br/>
-          Email: spaceprovident@gmail.com | Phone: +91 8638496774<br/>
-          HRERA Registration No.: RC/HARERA/GGM/4634/4229/2026/669 | GSTIN: 07AQIPP9575F1Z9</p>
+          <p>
+            BIBHOR PODDAR (PROVIDENT SPACE) is a real-estate
+            consultancy/brokerage business operating from Gurugram, Haryana,
+            India.<br />
+            Business Address: B-652 B Block Sushant lok-1, Near Headquarter 27,
+            Gurgaon, Haryana<br />
+            Email: spaceprovident@gmail.com | Phone: +91 8638496774<br />
+            HRERA Registration No.: RC/HARERA/GGM/4634/4229/2026/669 | GSTIN:
+            07AQIPP9575F1Z9
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">2. Scope of the Website</h4>
-          <p>The Website provides information relating to residential and commercial real-estate properties, plots, apartments, floors, and villas, primarily in Gurugram and the National Capital Region (NCR).</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            2. Scope of the Website
+          </h4>
+          <p>
+            The Website provides information relating to residential and
+            commercial real-estate properties, plots, apartments, floors, and
+            villas, primarily in Gurugram and the National Capital Region (NCR).
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">3. Nature of Our Services</h4>
-          <p>The Website is operated as a real-estate information, marketing, consultancy and brokerage platform. The Website does not itself constitute a sale agreement, allotment letter, booking form, or legally binding transaction document.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            3. Nature of Our Services
+          </h4>
+          <p>
+            The Website is operated as a real-estate information, marketing,
+            consultancy and brokerage platform. The Website does not itself
+            constitute a sale agreement, allotment letter, booking form, or
+            legally binding transaction document.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">4. Property Information</h4>
-          <p>While we make reasonable efforts to ensure accuracy, property details are supplied by developers, promoters, or owners. Prices, availability, specifications, floor plans, and possession timelines are subject to change without prior notice.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            4. Property Information
+          </h4>
+          <p>
+            While we make reasonable efforts to ensure accuracy, property
+            details are supplied by developers, promoters, or owners. Prices,
+            availability, specifications, floor plans, and possession timelines
+            are subject to change without prior notice.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">5. RERA / HRERA Compliance</h4>
-          <p>Relevant HRERA/RERA registration details are displayed where applicable. Users are encouraged to independently verify project registration and approvals with official HRERA/RERA records.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            5. RERA / HRERA Compliance
+          </h4>
+          <p>
+            Relevant HRERA/RERA registration details are displayed where
+            applicable. Users are encouraged to independently verify project
+            registration and approvals with official HRERA/RERA records.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">6. No Guarantee of Availability</h4>
-          <p>Submitting an enquiry or requesting a callback does not constitute a booking or reservation. Property booking is only confirmed when formal documentation and payment requirements are completed with the developer or promoter.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            6. No Guarantee of Availability
+          </h4>
+          <p>
+            Submitting an enquiry or requesting a callback does not constitute a
+            booking or reservation. Property booking is only confirmed when
+            formal documentation and payment requirements are completed with the
+            developer or promoter.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">7. Prices and Financial Information</h4>
-          <p>Displayed prices, payment plans, EMI illustrations, and returns are indicative. Prices may exclude GST, stamp duty, registration, development, or utility charges. Users must obtain a formal cost sheet before making financial commitments.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            7. Prices and Financial Information
+          </h4>
+          <p>
+            Displayed prices, payment plans, EMI illustrations, and returns are
+            indicative. Prices may exclude GST, stamp duty, registration,
+            development, or utility charges. Users must obtain a formal cost
+            sheet before making financial commitments.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">8. Developer & Third-Party Information</h4>
-          <p>Third-party content, developer descriptions, and architectural representations remain the responsibility of respective owners and promoters. Nothing on the Website constitutes an independent endorsement or warranty by the Company.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            8. Developer & Third-Party Information
+          </h4>
+          <p>
+            Third-party content, developer descriptions, and architectural
+            representations remain the responsibility of respective owners and
+            promoters. Nothing on the Website constitutes an independent
+            endorsement or warranty by the Company.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">9. Images, Renders and Floor Plans</h4>
-          <p>Photographs, artistic impressions, 3D renders, and floor plans are representational. Actual construction, views, and finishes may differ from visual representations.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            9. Images, Renders and Floor Plans
+          </h4>
+          <p>
+            Photographs, artistic impressions, 3D renders, and floor plans are
+            representational. Actual construction, views, and finishes may
+            differ from visual representations.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">10. User Enquiries and Communications</h4>
-          <p>Submitting your information authorises Provident Space to contact you regarding property enquiries, site visits, pricing, and consultancy services via phone, SMS, email, or WhatsApp.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            10. User Enquiries and Communications
+          </h4>
+          <p>
+            Submitting your information authorises Provident Space to contact
+            you regarding property enquiries, site visits, pricing, and
+            consultancy services via phone, SMS, email, or WhatsApp.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">11. User Responsibilities</h4>
-          <p>You agree to provide genuine information, not impersonate others, not submit false enquiries, and not scrape or misuse Website content or code.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            11. User Responsibilities
+          </h4>
+          <p>
+            You agree to provide genuine information, not impersonate others,
+            not submit false enquiries, and not scrape or misuse Website content
+            or code.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">12. Intellectual Property</h4>
-          <p>All text, graphics, logos, and materials are owned by or licensed to Provident Space and protected under applicable intellectual property laws.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            12. Intellectual Property
+          </h4>
+          <p>
+            All text, graphics, logos, and materials are owned by or licensed to
+            Provident Space and protected under applicable intellectual property
+            laws.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">13–15. External Links, Disclaimers & Availability</h4>
-          <p>External links are provided for convenience. Website content is for general information and does not constitute professional legal, tax, or investment advice. Uninterrupted access is not guaranteed.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            13–15. External Links, Disclaimers & Availability
+          </h4>
+          <p>
+            External links are provided for convenience. Website content is for
+            general information and does not constitute professional legal, tax,
+            or investment advice. Uninterrupted access is not guaranteed.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-6">16–20. Liability, Privacy & Jurisdiction</h4>
-          <p>Liability is limited to the maximum extent permitted by law. Data processing is governed by our Privacy Policy. These Terms are governed by Indian law, with jurisdiction in Gurugram, Haryana.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">
+            16–20. Liability, Privacy & Jurisdiction
+          </h4>
+          <p>
+            Liability is limited to the maximum extent permitted by law. Data
+            processing is governed by our Privacy Policy. These Terms are
+            governed by Indian law, with jurisdiction in Gurugram, Haryana.
+          </p>
         </div>
 
-        <div class="mt-6 pt-4 border-t border-white/10 flex justify-between items-center">
-          <a href="terms.html" class="text-xs text-brand-gold hover:underline">View Complete 20-Section Document →</a>
-          <button onclick="closeTerms()" class="bg-brand-gold text-brand-dark px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-white transition-colors">
+        <div
+          class="mt-6 pt-4 border-t border-white/10 flex justify-between items-center"
+        >
+          <a href="terms.html" class="text-xs text-brand-gold hover:underline"
+            >View Complete 20-Section Document →</a
+          >
+          <button
+            onclick="closeTerms()"
+            class="bg-brand-gold text-brand-dark px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-white transition-colors"
+          >
             Close
           </button>
         </div>
@@ -8759,15 +9270,23 @@
       <div
         class="relative w-full max-w-3xl apple-glass-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl my-10 animate-modal-pop"
       >
-        <div class="flex items-center justify-between border-b border-white/10 pb-6 mb-6">
+        <div
+          class="flex items-center justify-between border-b border-white/10 pb-6 mb-6"
+        >
           <div>
             <h3 class="text-2xl md:text-3xl font-serif">
               Privacy <span class="text-brand-gold">Policy</span>
             </h3>
-            <p class="text-white/40 text-xs mt-1">Last Updated: 12 August 2026</p>
+            <p class="text-white/40 text-xs mt-1">
+              Last Updated: 12 August 2026
+            </p>
           </div>
           <div class="flex items-center gap-3">
-            <a href="privacy.html" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 text-xs text-brand-gold border border-brand-gold/30 px-3 py-1.5 rounded-full hover:bg-brand-gold hover:text-brand-dark transition-all">
+            <a
+              href="privacy.html"
+              target="_blank"
+              class="hidden sm:inline-flex items-center gap-1.5 text-xs text-brand-gold border border-brand-gold/30 px-3 py-1.5 rounded-full hover:bg-brand-gold hover:text-brand-dark transition-all"
+            >
               <span class="material-symbols-outlined text-sm">open_in_new</span>
               Full Page
             </a>
@@ -8780,22 +9299,55 @@
           </div>
         </div>
 
-        <div class="prose prose-invert max-w-none text-white/70 text-sm leading-relaxed space-y-6 max-h-[60vh] overflow-y-auto pr-4 scroll-hide">
-          <p>At <strong>PROVIDENT SPACE</strong>, accessible from <a href="https://www.providentspace.com/" class="text-brand-gold underline">https://www.providentspace.com/</a>, we hold your privacy in high regard.</p>
+        <div
+          class="prose prose-invert max-w-none text-white/70 text-sm leading-relaxed space-y-6 max-h-[60vh] overflow-y-auto pr-4 scroll-hide"
+        >
+          <p>
+            At <strong>PROVIDENT SPACE</strong>, accessible from
+            <a
+              href="https://www.providentspace.com/"
+              class="text-brand-gold underline"
+              >https://www.providentspace.com/</a
+            >, we hold your privacy in high regard.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-4">1. Information Collection</h4>
-          <p>We collect information voluntarily provided when making property inquiries, scheduling site visits, or requesting consultation callbacks (Name, Phone, Email, Preferred Projects & Budget).</p>
+          <h4 class="text-brand-gold text-base font-bold mt-4">
+            1. Information Collection
+          </h4>
+          <p>
+            We collect information voluntarily provided when making property
+            inquiries, scheduling site visits, or requesting consultation
+            callbacks (Name, Phone, Email, Preferred Projects & Budget).
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-4">2. Use of Information</h4>
-          <p>Data is used exclusively to assist with real estate consulting, schedule developer site visits, provide cost sheets, and fulfill regulatory obligations under HRERA.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-4">
+            2. Use of Information
+          </h4>
+          <p>
+            Data is used exclusively to assist with real estate consulting,
+            schedule developer site visits, provide cost sheets, and fulfill
+            regulatory obligations under HRERA.
+          </p>
 
-          <h4 class="text-brand-gold text-base font-bold mt-4">3. Data Security & Third Parties</h4>
-          <p>We never sell or trade your personal data. Robust technical measures protect your data from unauthorized access.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-4">
+            3. Data Security & Third Parties
+          </h4>
+          <p>
+            We never sell or trade your personal data. Robust technical measures
+            protect your data from unauthorized access.
+          </p>
         </div>
 
-        <div class="mt-6 pt-4 border-t border-white/10 flex justify-between items-center">
-          <a href="privacy.html" class="text-xs text-brand-gold hover:underline">View Dedicated Privacy Page →</a>
-          <button onclick="closePrivacy()" class="bg-brand-gold text-brand-dark px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-white transition-colors">
+        <div
+          class="mt-6 pt-4 border-t border-white/10 flex justify-between items-center"
+        >
+          <a href="privacy.html" class="text-xs text-brand-gold hover:underline"
+            >View Dedicated Privacy Page →</a
+          >
+          <button
+            onclick="closePrivacy()"
+            class="bg-brand-gold text-brand-dark px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-white transition-colors"
+          >
             Close
           </button>
         </div>
@@ -8811,7 +9363,10 @@
             let matched = false;
             for (let i = 0; i < select.options.length; i++) {
               const opt = select.options[i];
-              if (opt.value && opt.value.toLowerCase().includes(projectName.toLowerCase())) {
+              if (
+                opt.value &&
+                opt.value.toLowerCase().includes(projectName.toLowerCase())
+              ) {
                 select.selectedIndex = i;
                 matched = true;
                 break;
@@ -8834,13 +9389,18 @@
 
       function sendWhatsAppInquiry(e) {
         if (e) e.preventDefault();
-        const name = document.getElementById("inquiry-name")?.value.trim() || "";
-        const contact = document.getElementById("inquiry-contact")?.value.trim() || "";
+        const name =
+          document.getElementById("inquiry-name")?.value.trim() || "";
+        const contact =
+          document.getElementById("inquiry-contact")?.value.trim() || "";
         const project = document.getElementById("inquiry-project")?.value || "";
         const budget = document.getElementById("inquiry-budget")?.value || "";
-        const notes = document.getElementById("inquiry-notes")?.value.trim() || "";
+        const notes =
+          document.getElementById("inquiry-notes")?.value.trim() || "";
 
-        let lines = ["Hello Provident Space team, I would like to make an inquiry."];
+        let lines = [
+          "Hello Provident Space team, I would like to make an inquiry.",
+        ];
         if (project) lines.push(`*Selected Option/Project:* ${project}`);
         if (budget) lines.push(`*Target Budget:* ${budget}`);
         if (name) lines.push(`*Name:* ${name}`);
@@ -8876,10 +9436,12 @@
       function slideProjects(direction) {
         const carousel = document.getElementById("projects-carousel");
         if (!carousel) return;
-        const cardWidth = carousel.firstElementChild ? carousel.firstElementChild.offsetWidth + 24 : 400;
+        const cardWidth = carousel.firstElementChild
+          ? carousel.firstElementChild.offsetWidth + 24
+          : 400;
         carousel.scrollBy({
           left: direction * cardWidth,
-          behavior: "smooth"
+          behavior: "smooth",
         });
       }
 
@@ -8917,9 +9479,9 @@
           requestAnimationFrame(raf);
 
           document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-            anchor.addEventListener('click', function (e) {
-              const targetId = this.getAttribute('href');
-              if (targetId && targetId !== '#') {
+            anchor.addEventListener("click", function (e) {
+              const targetId = this.getAttribute("href");
+              if (targetId && targetId !== "#") {
                 const targetEl = document.querySelector(targetId);
                 if (targetEl) {
                   e.preventDefault();
@@ -8930,7 +9492,9 @@
           });
         }
 
-        const targets = document.querySelectorAll("section > div, .grid > div, footer > div");
+        const targets = document.querySelectorAll(
+          "section > div, .grid > div, footer > div",
+        );
         targets.forEach((el, index) => {
           el.classList.add("reveal-on-scroll");
           el.style.transitionDelay = `${(index % 4) * 0.1}s`;
@@ -8944,10 +9508,12 @@
               }
             });
           },
-          { threshold: 0.08, rootMargin: "0px 0px -30px 0px" }
+          { threshold: 0.08, rootMargin: "0px 0px -30px 0px" },
         );
 
-        document.querySelectorAll(".reveal-on-scroll").forEach((el) => observer.observe(el));
+        document
+          .querySelectorAll(".reveal-on-scroll")
+          .forEach((el) => observer.observe(el));
       });
     </script>
   </body>
