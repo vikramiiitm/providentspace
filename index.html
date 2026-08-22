@@ -7521,45 +7521,6 @@
         color: white;
       }
     </style>
-    <script>
-      // Navigation Scroll Effect
-      window.addEventListener("scroll", () => {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add(
-            "bg-brand-dark/95",
-            "backdrop-blur-sm",
-            "shadow-xl",
-          );
-          header.classList.remove("py-6");
-          header.classList.add("py-3");
-        } else {
-          header.classList.remove(
-            "bg-brand-dark/95",
-            "backdrop-blur-sm",
-            "shadow-xl",
-          );
-          header.classList.add("py-6");
-          header.classList.remove("py-3");
-        }
-      });
-
-      function openContact() {
-        document.getElementById("contact-modal").classList.remove("hidden");
-        document.getElementById("contact-modal").classList.add("flex");
-      }
-
-      function closeContact() {
-        document.getElementById("contact-modal").classList.add("hidden");
-        document.getElementById("contact-modal").classList.remove("flex");
-      }
-
-      // Simple slider logic for locations (visual only now)
-      function slideLocations(dir) {
-        const slider = document.getElementById("loc-slider");
-        slider.scrollBy({ left: dir * 450, behavior: "smooth" });
-      }
-    </script>
   </head>
   <body class="font-sans antialiased">
     <!-- Header -->
@@ -7709,7 +7670,7 @@
               <h3 class="text-xl font-serif font-bold mb-1">M3M Mansion</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">SCDA Smart City Delhi Airport</p>
               <div class="flex gap-3">
-                <button onclick="openContact()" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
+                <button onclick="openContact('M3M Mansion')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
                 <a href="https://drive.google.com/file/d/1tdhYKgZOE6wCM0LEzmXneY6qVCNFfTJL/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
               </div>
             </div>
@@ -7724,7 +7685,7 @@
               <h3 class="text-xl font-serif font-bold mb-1">M3M St. Andrews</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Smart City Delhi Airport</p>
               <div class="flex gap-3">
-                <button onclick="openContact()" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
+                <button onclick="openContact('M3M St. Andrews')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
                 <a href="https://drive.google.com/file/d/15lUc9g--a9BspXDXzfKhl_jw1dh4dJwi/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
               </div>
             </div>
@@ -7739,7 +7700,7 @@
               <h3 class="text-xl font-serif font-bold mb-1">Three Sixty North</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">By Oberoi Group</p>
               <div class="flex gap-3">
-                <button onclick="openContact()" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
+                <button onclick="openContact('Three Sixty North')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
                 <a href="https://drive.google.com/file/d/11rkpGxn9LORF1CgpYl_F1iyFgqb3FE5t/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
               </div>
             </div>
@@ -7754,7 +7715,7 @@
               <h3 class="text-xl font-serif font-bold mb-1">ELAN, The Presidential</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Gurugram</p>
               <div class="flex gap-3">
-                <button onclick="openContact()" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
+                <button onclick="openContact('ELAN, The Presidential')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
                 <a href="https://drive.google.com/file/d/1fZZu4AGE_fiTcNbtHmjX_xTPYSwCHdKM/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
               </div>
             </div>
@@ -7769,7 +7730,7 @@
               <h3 class="text-xl font-serif font-bold mb-1">Signature Global</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Tonino Lamborghini</p>
               <div class="flex gap-3">
-                <button onclick="openContact()" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
+                <button onclick="openContact('Signature Global')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
                 <a href="https://drive.google.com/file/d/1u_MhWG8kHc_2AqSRglp5CzpkgHl0QHM6/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
               </div>
             </div>
@@ -7784,7 +7745,7 @@
               <h3 class="text-xl font-serif font-bold mb-1">The Empire</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Golf Course Road</p>
               <div class="flex gap-3">
-                <button onclick="openContact()" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
+                <button onclick="openContact('The Empire')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
                 <a href="https://drive.google.com/file/d/1f8tEGJndB6sVs5KXBBzynwCzVSQfJMsL/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
               </div>
             </div>
@@ -7799,7 +7760,7 @@
               <h3 class="text-xl font-serif font-bold mb-1">TARC Ishva</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Gurugram</p>
               <div class="flex gap-3">
-                <button onclick="openContact()" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
+                <button onclick="openContact('TARC Ishva')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
                 <a href="https://drive.google.com/file/d/1VTJDIKp54m2sqgcMGYkbKNLe71JNcusY/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
               </div>
             </div>
@@ -7814,7 +7775,7 @@
               <h3 class="text-xl font-serif font-bold mb-1">Suncity Monarch</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">Residents</p>
               <div class="flex gap-3">
-                <button onclick="openContact()" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
+                <button onclick="openContact('Suncity Monarch')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
                 <a href="https://drive.google.com/file/d/1RejwlVKVS0SxfTSMArATThWHqV0tlwvc/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
               </div>
             </div>
@@ -7829,7 +7790,7 @@
               <h3 class="text-xl font-serif font-bold mb-1">The Corridors</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">By Ireo</p>
               <div class="flex gap-3">
-                <button onclick="openContact()" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
+                <button onclick="openContact('The Corridors')" class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center">Enquire</button>
                 <a href="https://drive.google.com/file/d/1_VCa9XfT9m4qcy1fmITqvFjrLcXqye6L/view?usp=sharing" target="_blank" class="flex-1 border border-white/10 text-white py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:border-brand-gold/40 transition-all text-center">Download</a>
               </div>
             </div>
@@ -8516,47 +8477,74 @@
           </h3>
         </div>
 
-        <form class="space-y-6">
+        <form class="space-y-6" onsubmit="sendWhatsAppInquiry(event)">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <input
+              id="inquiry-name"
               type="text"
               placeholder="Full Name"
               class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm"
             />
             <input
-              type="email"
-              placeholder="Professional Email"
+              id="inquiry-contact"
+              type="text"
+              placeholder="Phone Number / Email"
               class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm"
             />
           </div>
           <select
-            class="w-full bg-brand-dark border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm appearance-none cursor-pointer"
+            id="inquiry-project"
+            class="w-full bg-brand-dark border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm appearance-none cursor-pointer text-white/90"
           >
-            <option class="bg-brand-dark text-white">
-              Preferred Investment Corridor
-            </option>
-            <option class="bg-brand-dark text-white">Golf Course Road</option>
-            <option class="bg-brand-dark text-white">
-              Golf Course Extension
-            </option>
-            <option class="bg-brand-dark text-white">New Gurgaon</option>
-            <option class="bg-brand-dark text-white">Dwarka Expressway</option>
-            <option class="bg-brand-dark text-white">Sohna Road</option>
-            <option class="bg-brand-dark text-white">MG Road</option>
+            <option value="" class="bg-brand-dark text-white">Preferred Investment Option / Project</option>
+            <optgroup label="Upcoming Projects" class="bg-brand-dark text-brand-gold font-bold">
+              <option value="M3M Mansion" class="bg-brand-dark text-white font-normal">M3M Mansion (Smart City Delhi Airport)</option>
+              <option value="M3M St. Andrews" class="bg-brand-dark text-white font-normal">M3M St. Andrews (Smart City Delhi Airport)</option>
+              <option value="Three Sixty North" class="bg-brand-dark text-white font-normal">Three Sixty North (By Oberoi Group)</option>
+              <option value="ELAN, The Presidential" class="bg-brand-dark text-white font-normal">ELAN, The Presidential (Gurugram)</option>
+              <option value="Signature Global" class="bg-brand-dark text-white font-normal">Signature Global (Tonino Lamborghini)</option>
+              <option value="The Empire" class="bg-brand-dark text-white font-normal">The Empire (Golf Course Road)</option>
+              <option value="TARC Ishva" class="bg-brand-dark text-white font-normal">TARC Ishva (Gurugram)</option>
+              <option value="Suncity Monarch" class="bg-brand-dark text-white font-normal">Suncity Monarch (Residents)</option>
+              <option value="The Corridors" class="bg-brand-dark text-white font-normal">The Corridors (By Ireo)</option>
+            </optgroup>
+            <optgroup label="Investment Corridors" class="bg-brand-dark text-brand-gold font-bold">
+              <option value="Golf Course Road" class="bg-brand-dark text-white font-normal">Golf Course Road Corridor</option>
+              <option value="Golf Course Extension" class="bg-brand-dark text-white font-normal">Golf Course Extension Corridor</option>
+              <option value="New Gurgaon" class="bg-brand-dark text-white font-normal">New Gurgaon Corridor</option>
+              <option value="Dwarka Expressway" class="bg-brand-dark text-white font-normal">Dwarka Expressway Corridor</option>
+              <option value="Sohna Road" class="bg-brand-dark text-white font-normal">Sohna Road Corridor</option>
+              <option value="MG Road" class="bg-brand-dark text-white font-normal">MG Road Corridor</option>
+            </optgroup>
           </select>
+
+          <select
+            id="inquiry-budget"
+            class="w-full bg-brand-dark border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm appearance-none cursor-pointer text-white/90"
+          >
+            <option value="" class="bg-brand-dark text-white">Estimated Investment Budget Range</option>
+            <option value="Below ₹1.5 Cr" class="bg-brand-dark text-white">Below ₹1.5 Cr</option>
+            <option value="₹1.5 Cr - ₹3 Cr" class="bg-brand-dark text-white">₹1.5 Cr - ₹3 Cr</option>
+            <option value="₹3 Cr - ₹5 Cr" class="bg-brand-dark text-white">₹3 Cr - ₹5 Cr</option>
+            <option value="₹5 Cr - ₹10 Cr" class="bg-brand-dark text-white">₹5 Cr - ₹10 Cr</option>
+            <option value="₹10 Cr - ₹20 Cr" class="bg-brand-dark text-white">₹10 Cr - ₹20 Cr</option>
+            <option value="₹20 Cr+ / Ultra Luxury" class="bg-brand-dark text-white">₹20 Cr+ / Ultra Luxury</option>
+          </select>
+
           <textarea
-            placeholder="Portfolio Requirements &amp; Budget range"
-            rows="4"
+            id="inquiry-notes"
+            placeholder="Specific Requirements (e.g. 3BHK, Possession timeline, High Rise)"
+            rows="3"
             class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm resize-none"
           ></textarea>
 
-          <a
-            href="https://wa.me/918638496774?text=Hello,%20I%20am%20interested%20in%20discussing%20portfolio%20requirements."
-            target="_blank"
-            class="w-full bg-brand-gold text-brand-dark font-bold py-5 rounded-xl uppercase tracking-widest text-xs hover:bg-white transition-all inline-block text-center"
+          <button
+            type="submit"
+            class="w-full bg-brand-gold text-brand-dark font-bold py-5 rounded-xl uppercase tracking-widest text-xs hover:bg-white transition-all flex items-center justify-center gap-3 cursor-pointer"
           >
-            Submit Inquiry via WhatsApp
-          </a>
+            <span class="material-symbols-outlined text-base">chat</span>
+            Send Inquiry via WhatsApp
+          </button>
         </form>
       </div>
     <!-- Terms & Conditions Modal -->
@@ -8620,14 +8608,54 @@
     </div>
 
     <script>
-      function openContact() {
-        document.getElementById("contact-modal").classList.remove("hidden");
-        document.getElementById("contact-modal").classList.add("flex");
+      function openContact(projectName) {
+        const modal = document.getElementById("contact-modal");
+        const select = document.getElementById("inquiry-project");
+        if (select) {
+          if (projectName) {
+            let matched = false;
+            for (let i = 0; i < select.options.length; i++) {
+              const opt = select.options[i];
+              if (opt.value && opt.value.toLowerCase().includes(projectName.toLowerCase())) {
+                select.selectedIndex = i;
+                matched = true;
+                break;
+              }
+            }
+            if (!matched) select.selectedIndex = 0;
+          } else {
+            select.selectedIndex = 0;
+          }
+        }
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
       }
 
       function closeContact() {
-        document.getElementById("contact-modal").classList.add("hidden");
-        document.getElementById("contact-modal").classList.remove("flex");
+        const modal = document.getElementById("contact-modal");
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+
+      function sendWhatsAppInquiry(e) {
+        if (e) e.preventDefault();
+        const name = document.getElementById("inquiry-name")?.value.trim() || "";
+        const contact = document.getElementById("inquiry-contact")?.value.trim() || "";
+        const project = document.getElementById("inquiry-project")?.value || "";
+        const budget = document.getElementById("inquiry-budget")?.value || "";
+        const notes = document.getElementById("inquiry-notes")?.value.trim() || "";
+
+        let lines = ["Hello Provident Space team, I would like to make an inquiry."];
+        if (project) lines.push(`*Selected Option/Project:* ${project}`);
+        if (budget) lines.push(`*Target Budget:* ${budget}`);
+        if (name) lines.push(`*Name:* ${name}`);
+        if (contact) lines.push(`*Contact:* ${contact}`);
+        if (notes) lines.push(`*Specific Requirements:* ${notes}`);
+
+        const messageText = lines.join("\n\n");
+        const waUrl = `https://wa.me/918638496774?text=${encodeURIComponent(messageText)}`;
+        window.open(waUrl, "_blank");
+        closeContact();
       }
 
       function openTerms() {
