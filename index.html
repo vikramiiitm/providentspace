@@ -8503,8 +8503,8 @@
           <div class="md:pl-12">
             <h4 class="text-brand-gold text-sm uppercase tracking-widest font-bold mb-8">Quick Links</h4>
             <ul class="space-y-4 text-white/60 text-sm">
-              <li><a href="#" onclick="openTerms(); return false;" class="hover:text-brand-gold transition-colors">Terms & Conditions</a></li>
-              <li><a href="#" class="hover:text-brand-gold transition-colors">Privacy Policy</a></li>
+              <li><a href="terms.html" onclick="openTerms(); return false;" class="hover:text-brand-gold transition-colors">Terms & Conditions</a></li>
+              <li><a href="privacy.html" onclick="openPrivacy(); return false;" class="hover:text-brand-gold transition-colors">Privacy Policy</a></li>
               <li><a href="#projects" class="hover:text-brand-gold transition-colors">Projects</a></li>
               <li><a href="#about" class="hover:text-brand-gold transition-colors">About Us</a></li>
             </ul>
@@ -8599,8 +8599,7 @@
               <option value="Golf Course Extension" class="bg-brand-dark text-white font-normal">Golf Course Extension Corridor</option>
               <option value="New Gurgaon" class="bg-brand-dark text-white font-normal">New Gurgaon Corridor</option>
               <option value="Dwarka Expressway" class="bg-brand-dark text-white font-normal">Dwarka Expressway Corridor</option>
-              <option value="Sohna Road" class="bg-brand-dark text-white font-normal">Sohna Road Corridor</option>
-              <option value="MG Road" class="bg-brand-dark text-white font-normal">MG Road Corridor</option>
+              <option value="Southern Peripheral Road" class="bg-brand-dark text-white font-normal">Southern Peripheral Road (SPR)</option>
             </optgroup>
           </select>
 
@@ -8608,10 +8607,9 @@
             id="inquiry-budget"
             class="w-full bg-brand-dark border border-white/10 px-6 py-4 rounded-2xl focus:outline-none text-white font-light text-sm appearance-none cursor-pointer text-white/90 apple-input"
           >
-            <option value="" class="bg-brand-dark text-white">Estimated Investment Budget Range</option>
-            <option value="Below ₹1.5 Cr" class="bg-brand-dark text-white">Below ₹1.5 Cr</option>
-            <option value="₹1.5 Cr - ₹3 Cr" class="bg-brand-dark text-white">₹1.5 Cr - ₹3 Cr</option>
-            <option value="₹3 Cr - ₹5 Cr" class="bg-brand-dark text-white">₹3 Cr - ₹5 Cr</option>
+            <option value="" class="bg-brand-dark text-white">Target Budget Range</option>
+            <option value="Under ₹2 Cr" class="bg-brand-dark text-white">Under ₹2 Cr</option>
+            <option value="₹2 Cr - ₹5 Cr" class="bg-brand-dark text-white">₹2 Cr - ₹5 Cr</option>
             <option value="₹5 Cr - ₹10 Cr" class="bg-brand-dark text-white">₹5 Cr - ₹10 Cr</option>
             <option value="₹10 Cr - ₹20 Cr" class="bg-brand-dark text-white">₹10 Cr - ₹20 Cr</option>
             <option value="₹20 Cr+ / Ultra Luxury" class="bg-brand-dark text-white">₹20 Cr+ / Ultra Luxury</option>
@@ -8633,62 +8631,150 @@
           </button>
         </form>
       </div>
+    </div>
+
     <!-- Terms & Conditions Modal -->
     <div
       id="terms-modal"
-      class="fixed inset-0 z-[200] hidden items-start justify-center p-6 overflow-y-auto"
+      class="fixed inset-0 z-[200] hidden items-start justify-center p-4 md:p-8 overflow-y-auto"
     >
       <div
-        class="absolute inset-0 bg-brand-dark/80 backdrop-blur-3xl transition-opacity duration-500"
+        class="absolute inset-0 bg-brand-dark/85 backdrop-blur-3xl transition-opacity duration-500"
         onclick="closeTerms()"
       ></div>
       <div
-        class="relative w-full max-w-4xl apple-glass-card p-10 md:p-12 rounded-[2.5rem] shadow-2xl my-10 animate-modal-pop"
+        class="relative w-full max-w-4xl apple-glass-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl my-10 animate-modal-pop"
       >
-        <button
-          class="absolute top-8 right-10 text-white/40 hover:text-brand-gold transition-colors duration-300"
-          onclick="closeTerms()"
-        >
-          <span class="material-symbols-outlined text-4xl">close</span>
-        </button>
+        <div class="flex items-center justify-between border-b border-white/10 pb-6 mb-6">
+          <div>
+            <h3 class="text-2xl md:text-3xl font-serif">
+              Terms & <span class="text-brand-gold">Conditions</span>
+            </h3>
+            <p class="text-white/40 text-xs mt-1">Last Updated: 12 August 2026 | HRERA Reg: RC/HARERA/GGM/4634/4229/2026/669</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="terms.html" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 text-xs text-brand-gold border border-brand-gold/30 px-3 py-1.5 rounded-full hover:bg-brand-gold hover:text-brand-dark transition-all">
+              <span class="material-symbols-outlined text-sm">open_in_new</span>
+              Full Page
+            </a>
+            <button
+              class="text-white/40 hover:text-brand-gold transition-colors duration-300"
+              onclick="closeTerms()"
+            >
+              <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+          </div>
+        </div>
 
-        <h3 class="text-3xl font-serif mb-2">
-          Terms & <span class="text-brand-gold">Conditions</span>
-        </h3>
-        <p class="text-white/40 text-xs mb-8">Last Updated: 12 August 2026</p>
+        <div class="prose prose-invert max-w-none text-white/70 text-sm leading-relaxed space-y-6 max-h-[65vh] overflow-y-auto pr-4 scroll-hide">
+          <p>Welcome to <strong>PROVIDENT SPACE</strong> ("we", "us", "our", or "the Company"). These Terms & Conditions ("Terms") govern your access to and use of <a href="https://www.providentspace.com/" class="text-brand-gold underline">https://www.providentspace.com/</a>, including all property listings, information, content, enquiry forms, services and features.</p>
 
-        <div class="prose prose-invert max-w-none text-white/60 text-sm leading-relaxed space-y-6 max-h-[70vh] overflow-y-auto pr-4 scroll-hide">
-          <p>Welcome to PROVIDENT SPACE. These Terms & Conditions govern your access to and use of https://www.providentspace.com/ including all property listings, information, content, enquiry forms, services and other features made available through the Website.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">1. About Us</h4>
+          <p>BIBHOR PODDAR (PROVIDENT SPACE) is a real-estate consultancy/brokerage business operating from Gurugram, Haryana, India.<br/>
+          Business Address: B-652 B Block Sushant lok-1, Near Headquarter 27, Gurgaon, Haryana<br/>
+          Email: spaceprovident@gmail.com | Phone: +91 8638496774<br/>
+          HRERA Registration No.: RC/HARERA/GGM/4634/4229/2026/669 | GSTIN: 07AQIPP9575F1Z9</p>
 
-          <h4 class="text-white text-base font-bold mt-6">1. About Us</h4>
-          <p>BIBHOR PODDAR (PROVIDENT SPACE) is a real-estate consultancy/brokerage business operating from Gurugram, Haryana, India.<br/>Address: B-652 B Block Sushant lok-1, Near Headquarter 27, Gurgaon, Haryana<br/>Email: spaceprovident@gmail.com<br/>HRERA Registration No.: RC/HARERA/GGM/4634/4229/2026/669<br/>GSTIN: 07AQIPP9575F1Z9</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">2. Scope of the Website</h4>
+          <p>The Website provides information relating to residential and commercial real-estate properties, plots, apartments, floors, and villas, primarily in Gurugram and the National Capital Region (NCR).</p>
 
-          <h4 class="text-white text-base font-bold mt-6">2. Scope of the Website</h4>
-          <p>The Website provides information relating to real-estate properties, residential projects, commercial projects, plots, apartments and related real-estate opportunities, primarily in Gurugram and the NCR.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">3. Nature of Our Services</h4>
+          <p>The Website is operated as a real-estate information, marketing, consultancy and brokerage platform. The Website does not itself constitute a sale agreement, allotment letter, booking form, or legally binding transaction document.</p>
 
-          <h4 class="text-white text-base font-bold mt-6">3. Nature of Our Services</h4>
-          <p>The Website is operated as a real-estate information, marketing, consultancy and/or brokerage platform. The Website does not itself constitute a sale agreement, allotment letter, or any other legally binding transaction document.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">4. Property Information</h4>
+          <p>While we make reasonable efforts to ensure accuracy, property details are supplied by developers, promoters, or owners. Prices, availability, specifications, floor plans, and possession timelines are subject to change without prior notice.</p>
 
-          <h4 class="text-white text-base font-bold mt-6">4. Property Information</h4>
-          <p>We make reasonable efforts to ensure accuracy. However, prices, availability, specifications, amenities, floor plans, possession timelines, offers, and images may change without prior notice. Users should independently verify all material information.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">5. RERA / HRERA Compliance</h4>
+          <p>Relevant HRERA/RERA registration details are displayed where applicable. Users are encouraged to independently verify project registration and approvals with official HRERA/RERA records.</p>
 
-          <h4 class="text-white text-base font-bold mt-6">5. RERA / HRERA Compliance</h4>
-          <p>Where applicable, relevant RERA/HRERA registration information may be displayed. Users are encouraged to verify project registration through official HRERA/RERA records.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">6. No Guarantee of Availability</h4>
+          <p>Submitting an enquiry or requesting a callback does not constitute a booking or reservation. Property booking is only confirmed when formal documentation and payment requirements are completed with the developer or promoter.</p>
 
-          <h4 class="text-white text-base font-bold mt-6">6–9. Availability, Pricing, Third-Party Info & Visuals</h4>
-          <p>Submitting an enquiry does not constitute a booking. Prices and financial information are for general informational purposes. Third-party information accuracy is the responsibility of the respective parties. Visual materials are representational.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">7. Prices and Financial Information</h4>
+          <p>Displayed prices, payment plans, EMI illustrations, and returns are indicative. Prices may exclude GST, stamp duty, registration, development, or utility charges. Users must obtain a formal cost sheet before making financial commitments.</p>
 
-          <h4 class="text-white text-base font-bold mt-6">10. User Enquiries</h4>
-          <p>By submitting your information, you authorise us to contact you regarding properties, site visits, pricing, offers, and related services via telephone, SMS, email, or WhatsApp.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">8. Developer & Third-Party Information</h4>
+          <p>Third-party content, developer descriptions, and architectural representations remain the responsibility of respective owners and promoters. Nothing on the Website constitutes an independent endorsement or warranty by the Company.</p>
 
-          <h4 class="text-white text-base font-bold mt-6">11–13. User Responsibilities, IP & External Links</h4>
-          <p>Users agree to provide accurate information and not misuse the Website. Website content is owned by or licensed to the Company. External links are for convenience only.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">9. Images, Renders and Floor Plans</h4>
+          <p>Photographs, artistic impressions, 3D renders, and floor plans are representational. Actual construction, views, and finishes may differ from visual representations.</p>
 
-          <h4 class="text-white text-base font-bold mt-6">14–17. Disclaimers & Liability</h4>
-          <p>Information is for general purposes and does not constitute legal, tax, financial, or investment advice. Liability is limited to the maximum extent permitted by law.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">10. User Enquiries and Communications</h4>
+          <p>Submitting your information authorises Provident Space to contact you regarding property enquiries, site visits, pricing, and consultancy services via phone, SMS, email, or WhatsApp.</p>
 
-          <h4 class="text-white text-base font-bold mt-6">18–20. Privacy, Modifications & Governing Law</h4>
-          <p>Personal data processing is governed by our Privacy Policy. Terms may be updated from time to time. These Terms are governed by the laws of India, with jurisdiction in Gurugram, Haryana.</p>
+          <h4 class="text-brand-gold text-base font-bold mt-6">11. User Responsibilities</h4>
+          <p>You agree to provide genuine information, not impersonate others, not submit false enquiries, and not scrape or misuse Website content or code.</p>
+
+          <h4 class="text-brand-gold text-base font-bold mt-6">12. Intellectual Property</h4>
+          <p>All text, graphics, logos, and materials are owned by or licensed to Provident Space and protected under applicable intellectual property laws.</p>
+
+          <h4 class="text-brand-gold text-base font-bold mt-6">13–15. External Links, Disclaimers & Availability</h4>
+          <p>External links are provided for convenience. Website content is for general information and does not constitute professional legal, tax, or investment advice. Uninterrupted access is not guaranteed.</p>
+
+          <h4 class="text-brand-gold text-base font-bold mt-6">16–20. Liability, Privacy & Jurisdiction</h4>
+          <p>Liability is limited to the maximum extent permitted by law. Data processing is governed by our Privacy Policy. These Terms are governed by Indian law, with jurisdiction in Gurugram, Haryana.</p>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-white/10 flex justify-between items-center">
+          <a href="terms.html" class="text-xs text-brand-gold hover:underline">View Complete 20-Section Document →</a>
+          <button onclick="closeTerms()" class="bg-brand-gold text-brand-dark px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-white transition-colors">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div
+      id="privacy-modal"
+      class="fixed inset-0 z-[200] hidden items-start justify-center p-4 md:p-8 overflow-y-auto"
+    >
+      <div
+        class="absolute inset-0 bg-brand-dark/85 backdrop-blur-3xl transition-opacity duration-500"
+        onclick="closePrivacy()"
+      ></div>
+      <div
+        class="relative w-full max-w-3xl apple-glass-card p-8 md:p-12 rounded-[2.5rem] shadow-2xl my-10 animate-modal-pop"
+      >
+        <div class="flex items-center justify-between border-b border-white/10 pb-6 mb-6">
+          <div>
+            <h3 class="text-2xl md:text-3xl font-serif">
+              Privacy <span class="text-brand-gold">Policy</span>
+            </h3>
+            <p class="text-white/40 text-xs mt-1">Last Updated: 12 August 2026</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="privacy.html" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 text-xs text-brand-gold border border-brand-gold/30 px-3 py-1.5 rounded-full hover:bg-brand-gold hover:text-brand-dark transition-all">
+              <span class="material-symbols-outlined text-sm">open_in_new</span>
+              Full Page
+            </a>
+            <button
+              class="text-white/40 hover:text-brand-gold transition-colors duration-300"
+              onclick="closePrivacy()"
+            >
+              <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="prose prose-invert max-w-none text-white/70 text-sm leading-relaxed space-y-6 max-h-[60vh] overflow-y-auto pr-4 scroll-hide">
+          <p>At <strong>PROVIDENT SPACE</strong>, accessible from <a href="https://www.providentspace.com/" class="text-brand-gold underline">https://www.providentspace.com/</a>, we hold your privacy in high regard.</p>
+
+          <h4 class="text-brand-gold text-base font-bold mt-4">1. Information Collection</h4>
+          <p>We collect information voluntarily provided when making property inquiries, scheduling site visits, or requesting consultation callbacks (Name, Phone, Email, Preferred Projects & Budget).</p>
+
+          <h4 class="text-brand-gold text-base font-bold mt-4">2. Use of Information</h4>
+          <p>Data is used exclusively to assist with real estate consulting, schedule developer site visits, provide cost sheets, and fulfill regulatory obligations under HRERA.</p>
+
+          <h4 class="text-brand-gold text-base font-bold mt-4">3. Data Security & Third Parties</h4>
+          <p>We never sell or trade your personal data. Robust technical measures protect your data from unauthorized access.</p>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-white/10 flex justify-between items-center">
+          <a href="privacy.html" class="text-xs text-brand-gold hover:underline">View Dedicated Privacy Page →</a>
+          <button onclick="closePrivacy()" class="bg-brand-gold text-brand-dark px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-white transition-colors">
+            Close
+          </button>
         </div>
       </div>
     </div>
@@ -8752,6 +8838,16 @@
       function closeTerms() {
         document.getElementById("terms-modal").classList.add("hidden");
         document.getElementById("terms-modal").classList.remove("flex");
+      }
+
+      function openPrivacy() {
+        document.getElementById("privacy-modal").classList.remove("hidden");
+        document.getElementById("privacy-modal").classList.add("flex");
+      }
+
+      function closePrivacy() {
+        document.getElementById("privacy-modal").classList.add("hidden");
+        document.getElementById("privacy-modal").classList.remove("flex");
       }
 
       window.addEventListener("scroll", () => {
