@@ -6159,6 +6159,92 @@
         width: fit-content;
         animation: marquee-right 40s linear infinite;
       }
+
+      /* Apple-Level Motion & Easing System */
+      :root {
+        --apple-ease: cubic-bezier(0.16, 1, 0.3, 1);
+        --apple-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+
+      /* Smooth Scroll Reveal */
+      .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(32px) scale(0.985);
+        transition: opacity 0.85s var(--apple-ease), transform 0.85s var(--apple-ease);
+        will-change: opacity, transform;
+      }
+      .reveal-on-scroll.is-revealed {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      /* Apple Card Hover Lift & Glow */
+      .apple-card {
+        transition: transform 0.6s var(--apple-ease), box-shadow 0.6s var(--apple-ease), border-color 0.6s var(--apple-ease);
+      }
+      .apple-card:hover {
+        transform: translateY(-6px) scale(1.008);
+        box-shadow: 0 30px 60px -15px rgba(212, 175, 55, 0.18), 0 0 25px rgba(212, 175, 55, 0.08);
+      }
+
+      /* Apple Ultra-Glass Modal Card */
+      .apple-glass-card {
+        background: rgba(18, 22, 31, 0.88);
+        backdrop-filter: blur(35px) saturate(200%);
+        -webkit-backdrop-filter: blur(35px) saturate(200%);
+        border: 1px solid rgba(212, 175, 55, 0.25);
+        box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.9), 0 0 40px rgba(212, 175, 55, 0.1);
+      }
+
+      /* Modal Spring Pop Entrance Animation */
+      @keyframes modalSpringPop {
+        0% {
+          opacity: 0;
+          transform: scale(0.93) translateY(24px);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+      .animate-modal-pop {
+        animation: modalSpringPop 0.5s var(--apple-ease) forwards;
+      }
+
+      /* Gold Shimmer Button */
+      .gold-shimmer-btn {
+        position: relative;
+        overflow: hidden;
+      }
+      .gold-shimmer-btn::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -60%;
+        width: 50%;
+        height: 200%;
+        background: linear-gradient(
+          60deg,
+          transparent,
+          rgba(255, 255, 255, 0.35),
+          transparent
+        );
+        transform: rotate(25deg);
+        transition: left 0.85s var(--apple-ease);
+      }
+      .gold-shimmer-btn:hover::after {
+        left: 120%;
+      }
+
+      /* Apple Form Focus Glow */
+      .apple-input {
+        transition: all 0.4s var(--apple-ease);
+      }
+      .apple-input:focus {
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+        border-color: #d4af37 !important;
+        background-color: rgba(255, 255, 255, 0.08) !important;
+      }
     </style>
 
     <script>
@@ -8457,20 +8543,20 @@
       class="fixed inset-0 z-[200] hidden items-center justify-center p-6"
     >
       <div
-        class="absolute inset-0 bg-brand-dark/95 backdrop-blur-2xl"
+        class="absolute inset-0 bg-brand-dark/80 backdrop-blur-3xl transition-opacity duration-500"
         onclick="closeContact()"
       ></div>
       <div
-        class="relative w-full max-w-2xl bg-brand-slate p-12 rounded-[2rem] border border-brand-gold/20 shadow-2xl"
+        class="relative w-full max-w-2xl apple-glass-card p-10 md:p-12 rounded-[2.5rem] shadow-2xl animate-modal-pop"
       >
         <button
-          class="absolute top-8 right-10 text-white/40 hover:text-white"
+          class="absolute top-8 right-10 text-white/40 hover:text-brand-gold transition-colors duration-300"
           onclick="closeContact()"
         >
           <span class="material-symbols-outlined text-4xl">close</span>
         </button>
 
-        <div class="flex items-center space-x-6 mb-12">
+        <div class="flex items-center space-x-6 mb-10">
           <img src="logo.png" alt="Logo" class="h-10" />
           <h3 class="text-3xl font-serif">
             Portfolio <span class="text-brand-gold">Inquiry</span>
@@ -8483,18 +8569,18 @@
               id="inquiry-name"
               type="text"
               placeholder="Full Name"
-              class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm"
+              class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-2xl focus:outline-none text-white font-light text-sm apple-input"
             />
             <input
               id="inquiry-contact"
               type="text"
               placeholder="Phone Number / Email"
-              class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm"
+              class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-2xl focus:outline-none text-white font-light text-sm apple-input"
             />
           </div>
           <select
             id="inquiry-project"
-            class="w-full bg-brand-dark border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm appearance-none cursor-pointer text-white/90"
+            class="w-full bg-brand-dark border border-white/10 px-6 py-4 rounded-2xl focus:outline-none text-white font-light text-sm appearance-none cursor-pointer text-white/90 apple-input"
           >
             <option value="" class="bg-brand-dark text-white">Preferred Investment Option / Project</option>
             <optgroup label="Upcoming Projects" class="bg-brand-dark text-brand-gold font-bold">
@@ -8520,7 +8606,7 @@
 
           <select
             id="inquiry-budget"
-            class="w-full bg-brand-dark border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm appearance-none cursor-pointer text-white/90"
+            class="w-full bg-brand-dark border border-white/10 px-6 py-4 rounded-2xl focus:outline-none text-white font-light text-sm appearance-none cursor-pointer text-white/90 apple-input"
           >
             <option value="" class="bg-brand-dark text-white">Estimated Investment Budget Range</option>
             <option value="Below ₹1.5 Cr" class="bg-brand-dark text-white">Below ₹1.5 Cr</option>
@@ -8535,14 +8621,14 @@
             id="inquiry-notes"
             placeholder="Specific Requirements (e.g. 3BHK, Possession timeline, High Rise)"
             rows="3"
-            class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-xl focus:outline-none focus:border-brand-gold text-white font-light text-sm resize-none"
+            class="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-2xl focus:outline-none text-white font-light text-sm resize-none apple-input"
           ></textarea>
 
           <button
             type="submit"
-            class="w-full bg-brand-gold text-brand-dark font-bold py-5 rounded-xl uppercase tracking-widest text-xs hover:bg-white transition-all flex items-center justify-center gap-3 cursor-pointer"
+            class="w-full bg-brand-gold text-brand-dark font-bold py-5 rounded-2xl uppercase tracking-widest text-xs hover:bg-white transition-all duration-300 flex items-center justify-center gap-3 cursor-pointer gold-shimmer-btn shadow-lg hover:shadow-brand-gold/30 hover:scale-[1.01] active:scale-[0.99]"
           >
-            <span class="material-symbols-outlined text-base">chat</span>
+            <span class="material-symbols-outlined text-lg">chat</span>
             Send Inquiry via WhatsApp
           </button>
         </form>
@@ -8553,14 +8639,14 @@
       class="fixed inset-0 z-[200] hidden items-start justify-center p-6 overflow-y-auto"
     >
       <div
-        class="absolute inset-0 bg-brand-dark/95 backdrop-blur-2xl"
+        class="absolute inset-0 bg-brand-dark/80 backdrop-blur-3xl transition-opacity duration-500"
         onclick="closeTerms()"
       ></div>
       <div
-        class="relative w-full max-w-4xl bg-brand-slate p-12 rounded-[2rem] border border-brand-gold/20 shadow-2xl my-10"
+        class="relative w-full max-w-4xl apple-glass-card p-10 md:p-12 rounded-[2.5rem] shadow-2xl my-10 animate-modal-pop"
       >
         <button
-          class="absolute top-8 right-10 text-white/40 hover:text-white"
+          class="absolute top-8 right-10 text-white/40 hover:text-brand-gold transition-colors duration-300"
           onclick="closeTerms()"
         >
           <span class="material-symbols-outlined text-4xl">close</span>
@@ -8683,6 +8769,28 @@
             "shadow-xl",
           );
         }
+      });
+
+      // Apple-Level Scroll Reveal Intersection Observer
+      document.addEventListener("DOMContentLoaded", () => {
+        const targets = document.querySelectorAll("section > div, .grid > div, footer > div");
+        targets.forEach((el, index) => {
+          el.classList.add("reveal-on-scroll");
+          el.style.transitionDelay = `${(index % 4) * 0.1}s`;
+        });
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-revealed");
+              }
+            });
+          },
+          { threshold: 0.08, rootMargin: "0px 0px -30px 0px" }
+        );
+
+        document.querySelectorAll(".reveal-on-scroll").forEach((el) => observer.observe(el));
       });
     </script>
   </body>
