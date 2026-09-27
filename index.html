@@ -6145,11 +6145,31 @@
       .marquee-track {
         display: flex;
         width: max-content;
-        animation: marquee-circle 40s linear infinite;
+        animation: marquee-circle 55s linear infinite;
         will-change: transform;
       }
       .marquee-wrapper:hover .marquee-track {
         animation-play-state: paused;
+      }
+      .partner-logo-item {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media (min-width: 768px) {
+        .partner-logo-item {
+          padding-left: 4.5rem;
+          padding-right: 4.5rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .partner-logo-item {
+          padding-left: 6rem;
+          padding-right: 6rem;
+        }
       }
       @keyframes marquee-circle {
         0% {
@@ -8323,7 +8343,7 @@
           <span class="italic text-brand-gold">Legacy Developers</span>
         </h2>
       </div>
-      <div class="marquee-wrapper py-10">
+      <div class="marquee-wrapper py-12 md:py-16">
         <!-- Edge Gradient Fade for Seamless Luxury Ribbon Effect -->
         <div
           class="pointer-events-none absolute left-0 top-0 bottom-0 w-24 md:w-44 z-10 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-transparent"
@@ -8333,121 +8353,121 @@
         ></div>
 
         <div class="marquee-track flex items-center">
-          <!-- Group 1: 14 logos (2 cycles of 7) -->
+          <!-- Group 1: 16 logos (2 cycles of 8) -->
           <div class="flex items-center shrink-0">
             <!-- Cycle 1A -->
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/DLF.NS_BIG.png"
                 alt="DLF"
-                class="h-10 md:h-14 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-12 md:h-16 lg:h-20 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/shobha.png"
                 alt="Sobha Realty"
-                class="h-20 md:h-32 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-24 md:h-36 lg:h-44 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/oberoi.png"
                 alt="Oberoi Realty"
-                class="h-10 md:h-14 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-12 md:h-16 lg:h-20 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/m3m-removebg-preview.png"
                 alt="M3M"
-                class="h-32 md:h-52 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-36 md:h-56 lg:h-64 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/emaar.png"
                 alt="Emaar"
-                class="h-24 md:h-40 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-28 md:h-44 lg:h-52 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/godrej.png"
                 alt="Godrej Properties"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/signatureglobal.png"
                 alt="Signature Global"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/tatahousing.png"
                 alt="Tata Housing"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
 
             <!-- Cycle 1B -->
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/DLF.NS_BIG.png"
                 alt="DLF"
-                class="h-10 md:h-14 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-12 md:h-16 lg:h-20 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/shobha.png"
                 alt="Sobha Realty"
-                class="h-20 md:h-32 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-24 md:h-36 lg:h-44 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/oberoi.png"
                 alt="Oberoi Realty"
-                class="h-10 md:h-14 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-12 md:h-16 lg:h-20 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/m3m-removebg-preview.png"
                 alt="M3M"
-                class="h-32 md:h-52 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-36 md:h-56 lg:h-64 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/emaar.png"
                 alt="Emaar"
-                class="h-24 md:h-40 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-28 md:h-44 lg:h-52 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/godrej.png"
                 alt="Godrej Properties"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/signatureglobal.png"
                 alt="Signature Global"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/tatahousing.png"
                 alt="Tata Housing"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
           </div>
@@ -8455,118 +8475,118 @@
           <!-- Group 2: Exact Duplicate of Group 1 for 100% Seamless Circle Loop -->
           <div class="flex items-center shrink-0" aria-hidden="true">
             <!-- Cycle 2A -->
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/DLF.NS_BIG.png"
                 alt="DLF"
-                class="h-10 md:h-14 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-12 md:h-16 lg:h-20 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/shobha.png"
                 alt="Sobha Realty"
-                class="h-20 md:h-32 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-24 md:h-36 lg:h-44 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/oberoi.png"
                 alt="Oberoi Realty"
-                class="h-10 md:h-14 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-12 md:h-16 lg:h-20 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/m3m-removebg-preview.png"
                 alt="M3M"
-                class="h-32 md:h-52 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-36 md:h-56 lg:h-64 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/emaar.png"
                 alt="Emaar"
-                class="h-24 md:h-40 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-28 md:h-44 lg:h-52 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/godrej.png"
                 alt="Godrej Properties"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/signatureglobal.png"
                 alt="Signature Global"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/tatahousing.png"
                 alt="Tata Housing"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
 
             <!-- Cycle 2B -->
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/DLF.NS_BIG.png"
                 alt="DLF"
-                class="h-10 md:h-14 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-12 md:h-16 lg:h-20 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/shobha.png"
                 alt="Sobha Realty"
-                class="h-20 md:h-32 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-24 md:h-36 lg:h-44 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/oberoi.png"
                 alt="Oberoi Realty"
-                class="h-10 md:h-14 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-12 md:h-16 lg:h-20 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/m3m-removebg-preview.png"
                 alt="M3M"
-                class="h-32 md:h-52 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-36 md:h-56 lg:h-64 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/emaar.png"
                 alt="Emaar"
-                class="h-24 md:h-40 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
+                class="h-28 md:h-44 lg:h-52 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/godrej.png"
                 alt="Godrej Properties"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/signatureglobal.png"
                 alt="Signature Global"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
-            <div class="px-8 md:px-12 shrink-0">
+            <div class="partner-logo-item">
               <img
                 src="partner_images/tatahousing.png"
                 alt="Tata Housing"
-                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+                class="h-20 md:h-28 lg:h-36 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
               />
             </div>
           </div>
