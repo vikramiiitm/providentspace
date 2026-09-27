@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <style>
       .yNHHyP-marker-view .IPAZAH-content-container > * {
@@ -6073,26 +6073,9 @@
         },
       };
     </script>
-    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
-
     <style>
       html {
-        scroll-behavior: smooth;
         scroll-padding-top: 100px;
-      }
-
-      html.lenis,
-      html.lenis body {
-        height: auto;
-      }
-      .lenis.lenis-smooth {
-        scroll-behavior: auto !important;
-      }
-      .lenis.lenis-smooth [data-lenis-prevent] {
-        overscroll-behavior: contain;
-      }
-      .lenis.lenis-stopped {
-        overflow: hidden;
       }
 
       :root {
@@ -7649,7 +7632,7 @@
         <div class="flex items-center space-x-6">
           <div
             class="flex items-center space-x-4 group cursor-pointer"
-            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            onclick="window.scrollTo({ top: 0 })"
           >
             <img
               src="logo.png"
@@ -7749,7 +7732,7 @@
       </div>
     </section>
 
-    <!-- Section 2: Upcoming Projects -->
+    <!-- Section 2: Bookings Open for These Projects -->
     <section id="projects" class="py-32 bg-brand-dark relative overflow-hidden">
       <div class="max-w-screen-2xl mx-auto px-6">
         <div
@@ -7757,7 +7740,7 @@
         >
           <div class="max-w-2xl">
             <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
-              Upcoming <span class="italic text-brand-gold">Projects</span>
+              Bookings Open for <span class="italic text-brand-gold">These Projects</span>
             </h2>
             <p class="text-white/40 text-sm tracking-wide">
               Explore a curated selection of Gurgaon's most promising new
@@ -7795,7 +7778,7 @@
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
               <img
                 src="signature_global.png"
-                alt="Signature Global"
+                alt="Tonino Lamborghini"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div
@@ -7804,14 +7787,14 @@
             </div>
             <div class="p-8">
               <h3 class="text-xl font-serif font-bold mb-1">
-                Signature Global
+                Tonino Lamborghini
               </h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
-                Tonino Lamborghini
+                By Signature Global
               </p>
               <div class="flex gap-3">
                 <button
-                  onclick="openContact('Signature Global')"
+                  onclick="openContact('Tonino Lamborghini')"
                   class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
                 >
                   Enquire
@@ -7832,7 +7815,7 @@
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
               <img
                 src="dlf_privana.png"
-                alt="Suncity Monarch"
+                alt="Monarch Residents"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div
@@ -7840,13 +7823,13 @@
               ></div>
             </div>
             <div class="p-8">
-              <h3 class="text-xl font-serif font-bold mb-1">Suncity Monarch</h3>
+              <h3 class="text-xl font-serif font-bold mb-1">Monarch Residents</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
-                Residents
+                By Suncity
               </p>
               <div class="flex gap-3">
                 <button
-                  onclick="openContact('Suncity Monarch')"
+                  onclick="openContact('Monarch Residents')"
                   class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
                 >
                   Enquire
@@ -7867,7 +7850,7 @@
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
               <img
                 src="m3m_st_andrews.png"
-                alt="M3M St. Andrews"
+                alt="St. Andrews (Smart City Delhi Airport)"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div
@@ -7875,13 +7858,15 @@
               ></div>
             </div>
             <div class="p-8">
-              <h3 class="text-xl font-serif font-bold mb-1">M3M St. Andrews</h3>
+              <h3 class="text-xl font-serif font-bold mb-1">
+                St. Andrews (Smart City Delhi Airport)
+              </h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
-                Smart City Delhi Airport
+                By M3M
               </p>
               <div class="flex gap-3">
                 <button
-                  onclick="openContact('M3M St. Andrews')"
+                  onclick="openContact('St. Andrews')"
                   class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
                 >
                   Enquire
@@ -7902,7 +7887,7 @@
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
               <img
                 src="m3m_mansion.png"
-                alt="M3M Mansion"
+                alt="Mansion (SCDA Smart City Delhi Airport)"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div
@@ -7910,13 +7895,15 @@
               ></div>
             </div>
             <div class="p-8">
-              <h3 class="text-xl font-serif font-bold mb-1">M3M Mansion</h3>
+              <h3 class="text-xl font-serif font-bold mb-1">
+                Mansion (SCDA Smart City Delhi Airport)
+              </h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
-                SCDA Smart City Delhi Airport
+                By M3M
               </p>
               <div class="flex gap-3">
                 <button
-                  onclick="openContact('M3M Mansion')"
+                  onclick="openContact('Mansion')"
                   class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
                 >
                   Enquire
@@ -7974,7 +7961,7 @@
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
               <img
                 src="elan_presidential.png"
-                alt="ELAN, The Presidential"
+                alt="The Presidential"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div
@@ -7983,14 +7970,14 @@
             </div>
             <div class="p-8">
               <h3 class="text-xl font-serif font-bold mb-1">
-                ELAN, The Presidential
+                The Presidential
               </h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
-                Gurugram
+                By ELAN
               </p>
               <div class="flex gap-3">
                 <button
-                  onclick="openContact('ELAN, The Presidential')"
+                  onclick="openContact('The Presidential')"
                   class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
                 >
                   Enquire
@@ -8021,7 +8008,7 @@
             <div class="p-8">
               <h3 class="text-xl font-serif font-bold mb-1">The Empire</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
-                Golf Course Road
+                By The Suncity Projects
               </p>
               <div class="flex gap-3">
                 <button
@@ -8046,7 +8033,7 @@
             <div class="aspect-[4/3] relative overflow-hidden bg-brand-slate">
               <img
                 src="tarc_ishva.png"
-                alt="TARC Ishva"
+                alt="Ishva"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div
@@ -8054,13 +8041,13 @@
               ></div>
             </div>
             <div class="p-8">
-              <h3 class="text-xl font-serif font-bold mb-1">TARC Ishva</h3>
+              <h3 class="text-xl font-serif font-bold mb-1">Ishva</h3>
               <p class="text-white/40 text-xs uppercase tracking-widest mb-6">
-                Gurugram
+                By TARC
               </p>
               <div class="flex gap-3">
                 <button
-                  onclick="openContact('TARC Ishva')"
+                  onclick="openContact('Ishva')"
                   class="flex-1 bg-brand-gold text-brand-dark py-3 text-[10px] font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all text-center"
                 >
                   Enquire
@@ -8862,20 +8849,32 @@
               Preferred Investment Option / Project
             </option>
             <optgroup
-              label="Upcoming Projects"
+              label="Bookings Open"
               class="bg-brand-dark text-brand-gold font-bold"
             >
               <option
-                value="M3M Mansion"
+                value="Tonino Lamborghini"
                 class="bg-brand-dark text-white font-normal"
               >
-                M3M Mansion (Smart City Delhi Airport)
+                Tonino Lamborghini (By Signature Global)
               </option>
               <option
-                value="M3M St. Andrews"
+                value="Monarch Residents"
                 class="bg-brand-dark text-white font-normal"
               >
-                M3M St. Andrews (Smart City Delhi Airport)
+                Monarch Residents (By Suncity)
+              </option>
+              <option
+                value="St. Andrews"
+                class="bg-brand-dark text-white font-normal"
+              >
+                St. Andrews (Smart City Delhi Airport - By M3M)
+              </option>
+              <option
+                value="Mansion"
+                class="bg-brand-dark text-white font-normal"
+              >
+                Mansion (SCDA Smart City Delhi Airport - By M3M)
               </option>
               <option
                 value="Three Sixty North"
@@ -8884,34 +8883,22 @@
                 Three Sixty North (By Oberoi Group)
               </option>
               <option
-                value="ELAN, The Presidential"
+                value="The Presidential"
                 class="bg-brand-dark text-white font-normal"
               >
-                ELAN, The Presidential (Gurugram)
-              </option>
-              <option
-                value="Signature Global"
-                class="bg-brand-dark text-white font-normal"
-              >
-                Signature Global (Tonino Lamborghini)
+                The Presidential (By ELAN)
               </option>
               <option
                 value="The Empire"
                 class="bg-brand-dark text-white font-normal"
               >
-                The Empire (Golf Course Road)
+                The Empire (By The Suncity Projects)
               </option>
               <option
-                value="TARC Ishva"
+                value="Ishva"
                 class="bg-brand-dark text-white font-normal"
               >
-                TARC Ishva (Gurugram)
-              </option>
-              <option
-                value="Suncity Monarch"
-                class="bg-brand-dark text-white font-normal"
-              >
-                Suncity Monarch (Residents)
+                Ishva (By TARC)
               </option>
               <option
                 value="The Corridors"
@@ -9414,36 +9401,8 @@
         }
       });
 
-      // Apple-Level Scroll Reveal Intersection Observer & Lenis Smooth Scroll
+      // Apple-Level Scroll Reveal Intersection Observer
       document.addEventListener("DOMContentLoaded", () => {
-        if (typeof Lenis !== "undefined") {
-          const lenis = new Lenis({
-            duration: 1.2,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            smoothWheel: true,
-            touchMultiplier: 1.5,
-          });
-
-          function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-          }
-          requestAnimationFrame(raf);
-
-          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-            anchor.addEventListener("click", function (e) {
-              const targetId = this.getAttribute("href");
-              if (targetId && targetId !== "#") {
-                const targetEl = document.querySelector(targetId);
-                if (targetEl) {
-                  e.preventDefault();
-                  lenis.scrollTo(targetEl, { offset: -90, duration: 1.2 });
-                }
-              }
-            });
-          });
-        }
-
         const targets = document.querySelectorAll(
           "section > div, .grid > div, footer > div",
         );
