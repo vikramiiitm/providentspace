@@ -6136,32 +6136,28 @@
         }
       }
 
-      /* Marquee Animation */
-      .marquee {
-        display: flex;
-        width: fit-content;
-        animation: marquee 30s linear infinite;
+      /* Circular Seamless Marquee */
+      .marquee-wrapper {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
       }
-      @keyframes marquee {
+      .marquee-track {
+        display: flex;
+        width: max-content;
+        animation: marquee-circle 40s linear infinite;
+        will-change: transform;
+      }
+      .marquee-wrapper:hover .marquee-track {
+        animation-play-state: paused;
+      }
+      @keyframes marquee-circle {
         0% {
           transform: translateX(0);
         }
         100% {
           transform: translateX(-50%);
         }
-      }
-      @keyframes marquee-right {
-        0% {
-          transform: translateX(-50%);
-        }
-        100% {
-          transform: translateX(0);
-        }
-      }
-      .marquee-right {
-        display: flex;
-        width: fit-content;
-        animation: marquee-right 40s linear infinite;
       }
 
       /* Apple-Level Motion & Easing System */
@@ -6821,6 +6817,15 @@
       }
       .max-w-4xl {
         max-width: 56rem;
+      }
+      .max-w-5xl {
+        max-width: 64rem;
+      }
+      .max-w-6xl {
+        max-width: 72rem;
+      }
+      .max-w-7xl {
+        max-width: 80rem;
       }
       .max-w-screen-2xl {
         max-width: 1536px;
@@ -7732,7 +7737,7 @@
       </div>
     </section>
 
-    <!-- Section 2: Bookings Open for These Projects -->
+    <!-- Section 2: Bookings Open for Ongoing Projects -->
     <section id="projects" class="py-32 bg-brand-dark relative overflow-hidden">
       <div class="max-w-screen-2xl mx-auto px-6">
         <div
@@ -7740,7 +7745,7 @@
         >
           <div class="max-w-2xl">
             <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
-              Bookings Open for <span class="italic text-brand-gold">These Projects</span>
+              Bookings Open for <span class="italic text-brand-gold">Ongoing Projects</span>
             </h2>
             <p class="text-white/40 text-sm tracking-wide">
               Explore a curated selection of Gurgaon's most promising new
@@ -8318,83 +8323,253 @@
           <span class="italic text-brand-gold">Legacy Developers</span>
         </h2>
       </div>
-      <div class="relative w-full">
+      <div class="marquee-wrapper py-10">
+        <!-- Edge Gradient Fade for Seamless Luxury Ribbon Effect -->
         <div
-          class="marquee-right flex items-center space-x-24 md:space-x-40 py-10"
-        >
-          <!-- First Set -->
-          <img
-            src="partner_images/DLF.NS_BIG.png"
-            alt="DLF"
-            class="h-16 md:h-24 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/shobha.png"
-            alt="Sobha Realty"
-            class="h-20 md:h-32 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/m3m-removebg-preview.png"
-            alt="M3M"
-            class="h-32 md:h-52 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/emaar.png"
-            alt="Emaar"
-            class="h-24 md:h-40 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/godrej.png"
-            alt="Godrej Properties"
-            class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/signatureglobal.png"
-            alt="Signature Global"
-            class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/tatahousing.png"
-            alt="Tata Housing"
-            class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
-          />
+          class="pointer-events-none absolute left-0 top-0 bottom-0 w-24 md:w-44 z-10 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-transparent"
+        ></div>
+        <div
+          class="pointer-events-none absolute right-0 top-0 bottom-0 w-24 md:w-44 z-10 bg-gradient-to-l from-brand-dark via-brand-dark/80 to-transparent"
+        ></div>
 
-          <!-- Second Set for seamless loop -->
-          <img
-            src="partner_images/DLF.NS_BIG.png"
-            alt="DLF"
-            class="h-16 md:h-24 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/shobha.png"
-            alt="Sobha Realty"
-            class="h-20 md:h-32 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/m3m-removebg-preview.png"
-            alt="M3M"
-            class="h-32 md:h-52 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/emaar.png"
-            alt="Emaar"
-            class="h-24 md:h-40 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/godrej.png"
-            alt="Godrej Properties"
-            class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/signatureglobal.png"
-            alt="Signature Global"
-            class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
-          />
-          <img
-            src="partner_images/tatahousing.png"
-            alt="Tata Housing"
-            class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
-          />
+        <div class="marquee-track flex items-center">
+          <!-- Group 1: 14 logos (2 cycles of 7) -->
+          <div class="flex items-center shrink-0">
+            <!-- Cycle 1A -->
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/DLF.NS_BIG.png"
+                alt="DLF"
+                class="h-10 md:h-14 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/shobha.png"
+                alt="Sobha Realty"
+                class="h-20 md:h-32 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/oberoi.png"
+                alt="Oberoi Realty"
+                class="h-10 md:h-14 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/m3m-removebg-preview.png"
+                alt="M3M"
+                class="h-32 md:h-52 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/emaar.png"
+                alt="Emaar"
+                class="h-24 md:h-40 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/godrej.png"
+                alt="Godrej Properties"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/signatureglobal.png"
+                alt="Signature Global"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/tatahousing.png"
+                alt="Tata Housing"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+
+            <!-- Cycle 1B -->
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/DLF.NS_BIG.png"
+                alt="DLF"
+                class="h-10 md:h-14 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/shobha.png"
+                alt="Sobha Realty"
+                class="h-20 md:h-32 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/oberoi.png"
+                alt="Oberoi Realty"
+                class="h-10 md:h-14 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/m3m-removebg-preview.png"
+                alt="M3M"
+                class="h-32 md:h-52 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/emaar.png"
+                alt="Emaar"
+                class="h-24 md:h-40 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/godrej.png"
+                alt="Godrej Properties"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/signatureglobal.png"
+                alt="Signature Global"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/tatahousing.png"
+                alt="Tata Housing"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+          </div>
+
+          <!-- Group 2: Exact Duplicate of Group 1 for 100% Seamless Circle Loop -->
+          <div class="flex items-center shrink-0" aria-hidden="true">
+            <!-- Cycle 2A -->
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/DLF.NS_BIG.png"
+                alt="DLF"
+                class="h-10 md:h-14 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/shobha.png"
+                alt="Sobha Realty"
+                class="h-20 md:h-32 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/oberoi.png"
+                alt="Oberoi Realty"
+                class="h-10 md:h-14 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/m3m-removebg-preview.png"
+                alt="M3M"
+                class="h-32 md:h-52 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/emaar.png"
+                alt="Emaar"
+                class="h-24 md:h-40 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/godrej.png"
+                alt="Godrej Properties"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/signatureglobal.png"
+                alt="Signature Global"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/tatahousing.png"
+                alt="Tata Housing"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+
+            <!-- Cycle 2B -->
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/DLF.NS_BIG.png"
+                alt="DLF"
+                class="h-10 md:h-14 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/shobha.png"
+                alt="Sobha Realty"
+                class="h-20 md:h-32 w-auto object-contain brightness-0 invert hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/oberoi.png"
+                alt="Oberoi Realty"
+                class="h-10 md:h-14 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/m3m-removebg-preview.png"
+                alt="M3M"
+                class="h-32 md:h-52 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/emaar.png"
+                alt="Emaar"
+                class="h-24 md:h-40 w-auto object-contain invert brightness-200 hover:scale-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/godrej.png"
+                alt="Godrej Properties"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/signatureglobal.png"
+                alt="Signature Global"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+            <div class="px-8 md:px-12 shrink-0">
+              <img
+                src="partner_images/tatahousing.png"
+                alt="Tata Housing"
+                class="h-16 md:h-24 w-auto object-contain hover:scale-110 hover:brightness-110 transition-all duration-500 cursor-pointer"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -8555,52 +8730,50 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-32 bg-brand-dark relative overflow-hidden">
-      <div class="max-w-screen-2xl mx-auto px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section id="about" class="py-20 md:py-32 bg-brand-dark relative overflow-hidden">
+      <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+        <!-- Section Header Above -->
+        <div class="text-center mb-12 md:mb-16">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold">
+            About <span class="italic text-brand-gold">Us</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <!-- Photo Side -->
-          <div class="relative flex justify-center lg:justify-start">
-            <div
-              class="relative w-80 h-96 rounded-3xl overflow-hidden border border-white/10 shadow-2xl"
-            >
-              <img
-                src="resources/ProjectsDocsdrivedownloaded/Photo - Bibhor Poddar.png"
-                alt="Bibhor Poddar - Founder, Provident Space"
-                class="w-full h-full object-cover object-top"
-              />
+          <div class="relative flex justify-center lg:justify-end">
+            <div class="relative inline-block">
               <div
-                class="absolute inset-0 bg-gradient-to-t from-brand-dark/60 via-transparent to-transparent"
-              ></div>
-            </div>
-            <div
-              class="absolute -bottom-4 left-1/2 lg:left-40 -translate-x-1/2 lg:translate-x-0 bg-brand-slate border border-brand-gold/20 px-8 py-4 rounded-2xl backdrop-blur-md shadow-xl"
-            >
-              <p
-                class="text-brand-gold text-xs font-bold uppercase tracking-widest"
+                class="relative w-72 sm:w-80 md:w-[340px] h-[380px] sm:h-[430px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl"
               >
-                Founder
-              </p>
-              <p class="text-white text-lg font-serif font-bold">
-                Bibhor Poddar
-              </p>
+                <img
+                  src="resources/ProjectsDocsdrivedownloaded/Photo - Bibhor Poddar.png"
+                  alt="Bibhor Poddar - Founder, Provident Space"
+                  class="w-full h-full object-cover object-top"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-brand-dark/60 via-transparent to-transparent"
+                ></div>
+              </div>
+              <div
+                class="absolute -bottom-4 right-2 sm:-right-4 bg-brand-slate border border-brand-gold/20 px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl backdrop-blur-md shadow-xl z-10"
+              >
+                <p
+                  class="text-brand-gold text-xs font-bold uppercase tracking-widest"
+                >
+                  Founder
+                </p>
+                <p class="text-white text-base sm:text-lg font-serif font-bold whitespace-nowrap">
+                  Bibhor Poddar
+                </p>
+              </div>
             </div>
           </div>
 
           <!-- Content Side -->
-          <div>
-            <div class="flex items-center space-x-4 mb-8">
-              <div class="logo-stripe w-12"></div>
-              <span
-                class="text-brand-gold text-xs uppercase tracking-[0.5em] font-bold"
-                >Our Story</span
-              >
-            </div>
-            <h2 class="text-4xl md:text-5xl font-serif font-bold mb-10">
-              About <span class="italic text-brand-gold">Us</span>
-            </h2>
-
+          <div class="lg:pl-4">
             <div
-              class="space-y-6 text-white/60 text-sm leading-relaxed font-light"
+              class="space-y-6 text-white/60 text-sm sm:text-base leading-relaxed font-light"
             >
               <p>
                 Buying real estate can be exciting, but it can also be
@@ -8621,11 +8794,11 @@
               </p>
             </div>
 
-            <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
               <a
                 href="https://drive.google.com/file/d/1KUqm5Zqs5eFxYBiDL9TYSyQ0JKZl13hV/view?usp=sharing"
                 target="_blank"
-                class="inline-flex items-center gap-3 bg-brand-slate border border-brand-gold/20 px-8 py-4 rounded-xl text-white text-xs font-bold uppercase tracking-widest hover:border-brand-gold/60 hover:bg-brand-gold/5 transition-all"
+                class="inline-flex items-center justify-center gap-3 bg-brand-slate border border-brand-gold/20 px-8 py-4 rounded-xl text-white text-xs font-bold uppercase tracking-widest hover:border-brand-gold/60 hover:bg-brand-gold/5 transition-all text-center"
               >
                 <span class="material-symbols-outlined text-brand-gold text-lg"
                   >verified</span
@@ -8637,7 +8810,7 @@
               </a>
               <button
                 onclick="openContact()"
-                class="inline-flex items-center gap-3 bg-brand-gold text-brand-dark px-8 py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-white transition-all"
+                class="inline-flex items-center justify-center gap-3 bg-brand-gold text-brand-dark px-8 py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-white transition-all text-center"
               >
                 <span class="material-symbols-outlined text-lg">chat</span>
                 Get In Touch
